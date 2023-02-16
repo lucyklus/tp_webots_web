@@ -7,10 +7,51 @@
     <link rel="icon" href="/icons/favicon.ico" sizes="any" />
     <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <title>Slniečka</title>
   </head>
   <body>
-    <div id="app"></div>
+    <nav>
+      <span id="logo">
+        <img src="/icons/icon.svg" />
+        Slniečka
+      </span>
+      <ul>
+        <li><a href="#domov">Domov</a></li>
+        <li><a href="#projekt">Projekt</a></li>
+        <li><a href="#tim">Tím</a></li>
+        <li><a href="#simulacia">Simulácia</a></li>
+        <li><a href="#dokumenty">Dokumenty</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div id="domov" class="home-container">
+      <div class="left">
+        <h1 id="project-title">
+          Umelá <br />inteligencia v <br />simulátore<br />
+          Webots
+        </h1>
+      </div>
+      <div class="right">
+        <img src="/src/images/player.png" id="player-image" />
+        <p id="project-description-first">
+          Pri spojení pojmov robotika a <br />umelá inteligencia (AI) sa nám
+          <br />zväčša vynorí predstava o <br />humanoidných robotoch z
+          <br />nejedného filmu.
+        </p>
+        <p id="project-description-second">
+          Ak však odhliadneme od <br />Hollywoodu, AI a robotika
+          <br />predstavujú dve odlišné <br />disciplíny, avšak môžu byť
+          <br />navzájom prospešné a môžu <br />
+          koexistovať.
+        </p>
+      </div>
+    </div>
     <script type="module" defer src="./src/js/main.js"></script>
   </body>
 </html>
