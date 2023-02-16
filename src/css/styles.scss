@@ -63,7 +63,7 @@ nav {
     align-items: center;
   }
 
-  #project-title {
+  h1 {
     text-align: right;
     font-weight: 800;
     font-size: 100px;
@@ -88,5 +88,30 @@ nav {
     font-weight: 500;
     font-size: 20px;
     line-height: 32px;
+  }
+}
+
+.project-container {
+  margin: 100px;
+  border: 3px solid #1b1a44;
+
+  h1 {
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 112px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  p {
+    @extend %text-center-shared;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+
+    span {
+      color: #861670;
+    }
   }
 }
