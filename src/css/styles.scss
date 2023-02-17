@@ -2,14 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+//TODO: add theme
+
 * {
   font-family: "Roboto", sans-serif;
   color: #1b1a44;
 }
 
-%text-center-shared {
+@mixin text-center {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.text-highlight-purple {
+  color: #861670;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 50px;
+  max-width: 1600px;
 }
 
 nav {
@@ -18,16 +30,15 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 20px;
 
-  #logo {
+  .logo {
     display: flex;
     align-items: center;
     gap: 5px;
     width: 50px;
     height: 50px;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   ul {
@@ -40,7 +51,7 @@ nav {
 
       a {
         font-weight: 500;
-        font-size: 24px;
+        font-size: 1.5rem;
       }
     }
   }
@@ -49,7 +60,7 @@ nav {
 .home-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 40px;
+  margin: 40px 0;
 
   .left {
     display: flex;
@@ -66,52 +77,64 @@ nav {
   h1 {
     text-align: right;
     font-weight: 800;
-    font-size: 100px;
+    font-size: 6rem;
     line-height: 120px;
   }
 
-  #player-image {
+  .player-image {
     width: 500px;
     height: 350px;
     margin: 40px 0px 20px 100px;
   }
 
-  #project-description-first {
-    @extend %text-center-shared;
+  .project-description-first {
+    @include text-center;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 36px;
   }
 
-  #project-description-second {
-    @extend %text-center-shared;
+  .project-description-second {
+    @include text-center;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 32px;
   }
 }
 
 .project-container {
-  margin: 100px;
+  margin: 100px 0;
   border: 3px solid #1b1a44;
 
   h1 {
     font-weight: 800;
-    font-size: 70px;
+    font-size: 4rem;
     line-height: 112px;
     text-align: center;
     margin-bottom: 20px;
   }
 
   p {
-    @extend %text-center-shared;
+    @include text-center;
     font-family: "Roboto";
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 36px;
+  }
+}
 
-    span {
-      color: #861670;
-    }
+.gallery-container {
+  display: grid;
+  background-color: #e3e2e7;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  margin: 40px 0;
+  padding: 80px;
+  gap: 40px;
+
+  img {
+    height: 300px;
+    border: 5px solid #1b1a44;
+    object-fit: cover;
   }
 }

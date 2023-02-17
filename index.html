@@ -16,73 +16,96 @@
     <title>Slniečka</title>
   </head>
   <body>
-    <nav>
-      <span id="logo">
-        <img src="/icons/icon.svg" />
-        Slniečka
-      </span>
-      <ul>
-        <li><a href="#domov">Domov</a></li>
-        <li><a href="#projekt">Projekt</a></li>
-        <li><a href="#tim">Tím</a></li>
-        <li><a href="#simulacia">Simulácia</a></li>
-        <li><a href="#dokumenty">Dokumenty</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-      </ul>
-    </nav>
-    <div id="domov" class="home-container">
-      <div class="left">
-        <h1>
-          Umelá <br />inteligencia v <br />simulátore<br />
-          Webots
-        </h1>
+    <div>
+      <nav class="wrapper">
+        <span class="logo">
+          <img src="/icons/icon.svg" />
+          Slniečka
+        </span>
+        <ul>
+          <li><a href="#domov">Domov</a></li>
+          <li><a href="#projekt">Projekt</a></li>
+          <li><a href="#tim">Tím</a></li>
+          <li><a href="#simulacia">Simulácia</a></li>
+          <li><a href="#dokumenty">Dokumenty</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrapper">
+      <div id="domov" class="home-container">
+        <div class="left">
+          <h1>
+            Umelá <br />inteligencia v <br />simulátore<br />
+            Webots
+          </h1>
+        </div>
+        <div class="right">
+          <img src="/src/images/player.png" class="player-image" />
+          <p class="project-description-first">
+            Pri spojení pojmov robotika a <br />umelá inteligencia (AI) sa nám
+            <br />zväčša vynorí predstava o <br />humanoidných robotoch z
+            <br />nejedného filmu.
+          </p>
+          <p class="project-description-second">
+            Ak však odhliadneme od <br />Hollywoodu, AI a robotika
+            <br />predstavujú dve odlišné <br />disciplíny, avšak môžu byť
+            <br />navzájom prospešné a môžu <br />
+            koexistovať.
+          </p>
+        </div>
       </div>
-      <div class="right">
-        <img src="/src/images/player.png" id="player-image" />
-        <p id="project-description-first">
-          Pri spojení pojmov robotika a <br />umelá inteligencia (AI) sa nám
-          <br />zväčša vynorí predstava o <br />humanoidných robotoch z
-          <br />nejedného filmu.
+    </div>
+    <div class="wrapper">
+      <div id="projekt" class="project-container">
+        <h1>PROJEKT</h1>
+        <p>
+          Cieľom projektu je
+          <span class="text-highlight-purple">
+            preskúmať možnosti využívania prvkov umelej inteligencie
+          </span>
+          v prostredí <br />
+          na simuláciu robotov
+          <span class="text-highlight-purple">Webots</span>.
         </p>
-        <p id="project-description-second">
-          Ak však odhliadneme od <br />Hollywoodu, AI a robotika
-          <br />predstavujú dve odlišné <br />disciplíny, avšak môžu byť
-          <br />navzájom prospešné a môžu <br />
-          koexistovať.
+        <p>
+          Zameriame sa na
+          <span class="text-highlight-purple">vytvorenie</span> vlastného
+          <span class="text-highlight-purple">inteligentného robota </span> a
+          <span class="text-highlight-purple">simulačného prostredia</span>, v
+          <br />
+          ktorom bude tento robot vykonávať rôzne definované úlohy. Inými
+          slovami,
+          <br />
+          naprogramujeme
+          <span class="text-highlight-purple">vlastnú riadiacu jednotku</span>,
+          ktorá sa naučí komunikovať s prostredím.
+        </p>
+        <p>
+          Riešenie navrhneme, odsimulujeme a otestujeme v prostredí Webots,
+          pričom riadiacu <br />
+          jednotku naprogramujeme v
+          <span class="text-highlight-purple">Pythone</span>.
+        </p>
+        <p>
+          Pre učenie použijeme
+          <span class="text-highlight-purple">reinforcement learning</span>,
+          vďaka ktorému náš robot bude vedieť hrať <br />
+          futbal a rozpoznávať spoluhráčov. Nakoniec týmto štýlom vytvoríme
+          <span class="text-highlight-purple"
+            >inteligentné <br />
+            futbalové tímy</span
+          >, schopné súperiť o góly.
         </p>
       </div>
     </div>
-    <div id="projekt" class="project-container">
-      <h1>PROJEKT</h1>
-      <p>
-        Cieľom projektu je
-        <span> preskúmať možnosti využívania prvkov umelej inteligencie </span>
-        v prostredí <br />
-        na simuláciu robotov <span>Webots</span>.
-      </p>
-      <p>
-        Zameriame sa na <span>vytvorenie</span> vlastného
-        <span>inteligentného robota </span> a
-        <span>simulačného prostredia</span>, v <br />
-        ktorom bude tento robot vykonávať rôzne definované úlohy. Inými slovami,
-        <br />
-        naprogramujeme <span>vlastnú riadiacu jednotku</span>, ktorá sa naučí
-        komunikovať s prostredím.
-      </p>
-      <p>
-        Riešenie navrhneme, odsimulujeme a otestujeme v prostredí Webots, pričom
-        riadiacu <br />
-        jednotku naprogramujeme v <span>Pythone</span>.
-      </p>
-      <p>
-        Pre učenie použijeme <span>reinforcement learning</span>, vďaka ktorému
-        náš robot bude vedieť hrať <br />
-        futbal a rozpoznávať spoluhráčov. Nakoniec týmto štýlom vytvoríme
-        <span
-          >inteligentné <br />
-          futbalové tímy</span
-        >, schopné súperiť o góly.
-      </p>
+    <div>
+      <div class="wrapper gallery-container">
+        <img src="/src/images/maps/map1.png" />
+        <img src="/src/images/maps/map2.png" />
+        <img src="/src/images/maps/map3.png" />
+        <img src="/src/images/maps/map4.png" />
+      </div>
     </div>
     <script type="module" defer src="./src/js/main.js"></script>
   </body>
