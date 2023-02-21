@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply text-blue;
+  @apply font-roboto;
+}
+
+@layer components {
+  .wrapper {
+    @apply mx-auto px-3 max-w-1600;
+  }
+}
+
+@layer utilities {
+  .text-center-margin {
+    @apply text-center mb-5;
+  }
+
+  .border-purple {
+    @apply border-2 border-solid border-blue;
+  }
+
+  .paragraph-project {
+    @apply text-center-margin font-medium text-2xl leading-9;
+  }
+
+  .img-gallery {
+    @apply h-300 border-4 border-solid border-blue object-cover;
+  }
+}

@@ -16,38 +16,53 @@
     <title>Slniečka</title>
   </head>
   <body>
-    <div>
-      <nav class="wrapper">
-        <span class="logo">
+    <div class="bg-turquoise">
+      <nav class="wrapper flex items-center justify-between w-full py-3">
+        <span class="flex gap-1.5 items-center w-12 h-12 font-normal text-3xl">
           <img src="/icons/icon.svg" />
           Slniečka
         </span>
         <ul>
-          <li><a href="#domov">Domov</a></li>
-          <li><a href="#projekt">Projekt</a></li>
-          <li><a href="#tim">Tím</a></li>
-          <li><a href="#simulacia">Simulácia</a></li>
-          <li><a href="#dokumenty">Dokumenty</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
+          <li class="mr-10 inline">
+            <a class="font-medium text-2xl" href="#domov">Domov</a>
+          </li>
+          <li class="mr-10 inline">
+            <a class="font-medium text-2xl" href="#projekt">Projekt</a>
+          </li>
+          <li class="mr-10 inline">
+            <a class="font-medium text-2xl" href="#tim">Tím</a>
+          </li>
+          <li class="mr-10 inline">
+            <a class="font-medium text-2xl" href="#simulacia">Simulácia</a>
+          </li>
+          <li class="mr-10 inline">
+            <a class="font-medium text-2xl" href="#dokumenty">Dokumenty</a>
+          </li>
+          <li class="mr-10 inline">
+            <a class="font-medium text-2xl" href="#kontakt">Kontakt</a>
+          </li>
         </ul>
       </nav>
     </div>
     <div class="wrapper">
-      <div id="domov" class="home-container">
-        <div class="left">
-          <h1>
+      <div id="domov" class="grid grid-cols-2 my-10">
+        <div class="flex justify-center">
+          <h1 class="text-right font-extrabold text-8xl leading-xl-loose">
             Umelá <br />inteligencia v <br />simulátore<br />
             Webots
           </h1>
         </div>
-        <div class="right">
-          <img src="/src/images/player.png" class="player-image" />
-          <p class="project-description-first">
+        <div class="flex flex-col justify-center">
+          <img
+            src="/src/images/player.png"
+            class="w-500 h-350 mt-10 mb-5 ml-24"
+          />
+          <p class="text-center-margin font-medium text-2xl leading-9">
             Pri spojení pojmov robotika a <br />umelá inteligencia (AI) sa nám
             <br />zväčša vynorí predstava o <br />humanoidných robotoch z
             <br />nejedného filmu.
           </p>
-          <p class="project-description-second">
+          <p class="text-center-margin font-medium text-xl leading-8">
             Ak však odhliadneme od <br />Hollywoodu, AI a robotika
             <br />predstavujú dve odlišné <br />disciplíny, avšak môžu byť
             <br />navzájom prospešné a môžu <br />
@@ -57,54 +72,56 @@
       </div>
     </div>
     <div class="wrapper">
-      <div id="projekt" class="project-container">
-        <h1>PROJEKT</h1>
-        <p>
+      <div id="projekt" class="my-24 mx-24 border-purple">
+        <h1 class="font-extrabold text-6xl text-center leading-l-loose mb-5">
+          PROJEKT
+        </h1>
+        <p class="paragraph-project">
           Cieľom projektu je
-          <span class="text-highlight-purple">
+          <span class="text-purple">
             preskúmať možnosti využívania prvkov umelej inteligencie
           </span>
           v prostredí <br />
           na simuláciu robotov
-          <span class="text-highlight-purple">Webots</span>.
+          <span class="text-purple">Webots</span>.
         </p>
-        <p>
+        <p class="paragraph-project">
           Zameriame sa na
-          <span class="text-highlight-purple">vytvorenie</span> vlastného
-          <span class="text-highlight-purple">inteligentného robota </span> a
-          <span class="text-highlight-purple">simulačného prostredia</span>, v
+          <span class="text-purple">vytvorenie</span> vlastného
+          <span class="text-purple">inteligentného robota </span> a
+          <span class="text-purple">simulačného prostredia</span>, v
           <br />
           ktorom bude tento robot vykonávať rôzne definované úlohy. Inými
           slovami,
           <br />
           naprogramujeme
-          <span class="text-highlight-purple">vlastnú riadiacu jednotku</span>,
-          ktorá sa naučí komunikovať s prostredím.
+          <span class="text-purple">vlastnú riadiacu jednotku</span>, ktorá sa
+          naučí komunikovať s prostredím.
         </p>
-        <p>
+        <p class="paragraph-project">
           Riešenie navrhneme, odsimulujeme a otestujeme v prostredí Webots,
           pričom riadiacu <br />
           jednotku naprogramujeme v
-          <span class="text-highlight-purple">Pythone</span>.
+          <span class="text-purple">Pythone</span>.
         </p>
-        <p>
+        <p class="paragraph-project">
           Pre učenie použijeme
-          <span class="text-highlight-purple">reinforcement learning</span>,
-          vďaka ktorému náš robot bude vedieť hrať <br />
+          <span class="text-purple">reinforcement learning</span>, vďaka ktorému
+          náš robot bude vedieť hrať <br />
           futbal a rozpoznávať spoluhráčov. Nakoniec týmto štýlom vytvoríme
-          <span class="text-highlight-purple"
+          <span class="text-purple"
             >inteligentné <br />
             futbalové tímy</span
           >, schopné súperiť o góly.
         </p>
       </div>
     </div>
-    <div>
-      <div class="wrapper gallery-container">
-        <img src="/src/images/maps/map1.png" />
-        <img src="/src/images/maps/map2.png" />
-        <img src="/src/images/maps/map3.png" />
-        <img src="/src/images/maps/map4.png" />
+    <div class="bg-grey">
+      <div class="wrapper grid grid-cols-4 w-full p-20 gap-10">
+        <img class="img-gallery" src="/src/images/maps/map1.png" />
+        <img class="img-gallery" src="/src/images/maps/map2.png" />
+        <img class="img-gallery" src="/src/images/maps/map3.png" />
+        <img class="img-gallery" src="/src/images/maps/map4.png" />
       </div>
     </div>
     <script type="module" defer src="./src/js/main.js"></script>
