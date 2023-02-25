@@ -13,6 +13,7 @@ module.exports = {
       blue: '#1b1a44',
       turquoise: '#67d8d6cc',
       purple: '#861670',
+      mauve: '#D2CDF4',
       grey: '#e3e2e7',
     },
     extend: {
@@ -22,10 +23,15 @@ module.exports = {
         'm-loose': '5rem',
       },
       height: {
+        250: '15.625rem',
         300: '18.75rem',
         350: '21.875rem',
+        500: '31.25rem',
       },
       width: {
+        250: '15.625rem',
+        300: '18.75rem',
+        360: '22.5rem',
         500: '31.25rem',
       },
       maxWidth: {
