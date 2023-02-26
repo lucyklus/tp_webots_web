@@ -14,24 +14,8 @@ html {
 }
 
 @layer utilities {
-  .text-center-margin {
-    @apply text-center mb-5;
-  }
-
-  .border-purple {
-    @apply border-2 border-solid border-blue;
-  }
-
-  .p-text {
-    @apply text-center-margin font-medium text-2xl leading-9;
-  }
-
-  .img-gallery {
-    @apply h-300 border-4 border-solid border-blue object-cover;
-  }
-
   .h1-sections {
-    @apply font-extrabold text-6xl text-center leading-l-loose mb-5;
+    @apply font-extrabold text-6xl text-center leading-l-loose;
   }
 
   .h2-profiles-6xl-bold {
@@ -42,8 +26,24 @@ html {
     @apply text-4xl;
   }
 
+  .h2-documents {
+    @apply text-3xl font-semibold;
+  }
+
+  .border-purple {
+    @apply border-2 border-solid border-blue;
+  }
+
+  .img-gallery {
+    @apply h-300 border-4 border-solid border-blue object-cover;
+  }
+
   .img-profiles {
     @apply h-250 w-250 border-4 border-solid border-blue rounded-3xl object-cover;
+  }
+
+  .text-center-margin {
+    @apply text-center mb-5;
   }
 
   .text-profiles {
@@ -58,7 +58,15 @@ html {
     @apply text-profiles text-purple font-medium leading-tight;
   }
 
-  .h2-documents {
-    @apply text-4xl font-semibold;
+  .content-documents {
+    // TODO: Add content
+  }
+
+  .p-body {
+    @apply text-center-margin font-medium text-2xl leading-9;
+  }
+
+  .p-footer {
+    @apply font-medium text-sm;
   }
 }

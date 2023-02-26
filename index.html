@@ -22,6 +22,7 @@
   <body>
     <div class="bg-turquoise">
       <nav class="wrapper flex items-center justify-between w-full py-3">
+        <!-- TODO: stick nav after scroll -->
         <span class="flex gap-1.5 items-center w-12 h-12 font-normal text-3xl">
           <img src="/icons/icon.svg" />
           Slniečka
@@ -61,7 +62,7 @@
             src="/src/images/player.png"
             class="w-500 h-350 mt-10 mb-5 ml-24"
           />
-          <p class="text-center-margin p-text">
+          <p class="text-center-margin p-body">
             Pri spojení pojmov robotika a <br />umelá inteligencia (AI) sa nám
             <br />zväčša vynorí predstava o <br />humanoidných robotoch z
             <br />nejedného filmu.
@@ -77,8 +78,8 @@
     </div>
     <div class="wrapper">
       <div id="projekt" class="my-24 mx-24 border-purple">
-        <h1 class="h1-sections">PROJEKT</h1>
-        <p class="p-text">
+        <h1 class="h1-sections mb-5">PROJEKT</h1>
+        <p class="p-body">
           Cieľom projektu je
           <span class="text-purple">
             preskúmať možnosti využívania prvkov umelej inteligencie
@@ -87,7 +88,7 @@
           na simuláciu robotov
           <span class="text-purple">Webots</span>.
         </p>
-        <p class="p-text">
+        <p class="p-body">
           Zameriame sa na
           <span class="text-purple">vytvorenie</span> vlastného
           <span class="text-purple">inteligentného robota </span> a
@@ -100,13 +101,13 @@
           <span class="text-purple">vlastnú riadiacu jednotku</span>, ktorá sa
           naučí komunikovať s prostredím.
         </p>
-        <p class="p-text">
+        <p class="p-body">
           Riešenie navrhneme, odsimulujeme a otestujeme v prostredí Webots,
           pričom riadiacu <br />
           jednotku naprogramujeme v
           <span class="text-purple">Pythone</span>.
         </p>
-        <p class="p-text">
+        <p class="p-body">
           Pre učenie použijeme
           <span class="text-purple">reinforcement learning</span>, vďaka ktorému
           náš robot bude vedieť hrať <br />
@@ -128,7 +129,7 @@
     </div>
     <div id="tim" class="wrapper bg-grey">
       <h1 class="mt-24 pt-40 text-6xl text-center">Zoznámte sa s</h1>
-      <h1 class="h1-sections text-purple">TÍMOM</h1>
+      <h1 class="h1-sections text-purple mb-5">TÍMOM</h1>
       <h2 class="text-center">
         <span class="h2-profiles-6xl-bold">71,</span>
         <span class="h2-profiles-4xl">43</span>
@@ -221,8 +222,8 @@
       </div>
     </div>
     <div id="simulacia" class="wrapper flex flex-col items-center pb-24">
-      <h1 class="h1-sections text-purple">SIMULÁCIA</h1>
-      <p class="p-text">
+      <h1 class="h1-sections text-purple mb-5">SIMULÁCIA</h1>
+      <p class="p-body">
         Nižšie je krátka ukážka. Pre zobrazenie celej simulácie klikni
         <span class="text-purple">TU</span>
         <!-- TODO:  link to simulation -->
@@ -230,10 +231,10 @@
       <div class="h-500 w-3/4 border-dashed border-4"></div>
     </div>
     <div id="dokumenty" class="wrapper bg-mauve flex flex-col items-center">
-      <h1 class="h1-sections text-purple">DOKUMENTY</h1>
-      <div class="border-solid border-4 mb-24 w-3/5">
+      <h1 class="h1-sections text-purple mb-20">DOKUMENTY</h1>
+      <div class="border-solid border-4 mb-24 w-1/2">
         <h2 class="h2-documents text-center-margin mt-2">Zápisnice</h2>
-        <div class="flex justify-evenly">
+        <div class="flex justify-between px-5">
           <div class="flex items-center gap-2">
             <h2 class="h2-documents">1. semester</h2>
             <span class="material-symbols-outlined text-4xl font-black">
@@ -247,12 +248,40 @@
             </span>
           </div>
         </div>
+        <div class="content-documents">
+          <!-- TODO: load this content dynamically with JS -->
+        </div>
       </div>
-      <div class="border-solid border-4 mb-24 w-3/5">
+      <div class="border-solid border-4 mb-24 w-1/2">
         <h2 class="h2-documents text-center-margin mt-2">Dokumentácie</h2>
+        <div class="flex justify-between px-5">
+          <div class="content-documents">
+            <!-- TODO: load this content dynamically with JS -->
+          </div>
+        </div>
       </div>
     </div>
     <div id="kontakt"></div>
     <script type="module" defer src="./src/js/main.js"></script>
   </body>
+  <footer id="kontakt" class="wrapper grid grid-cols-3 w-full px-10 py-5">
+    <div class="flex items-center">
+      <img class="w-14 h-14" src="/src/images/mailbox.png" />
+      <p class="p-footer">
+        Fakulta informatiky a informačných technológií <br />Ilkovičova 6276/2
+      </p>
+    </div>
+    <div class="items-center">
+      <h1 class="font-extrabold text-4xl text-center text-purple">KONTAKT</h1>
+      <p class="flex p-footer items-center justify-center">
+        &copy; 2022 tím 11
+        <img class="w-8 h-8" src="/icons/icon.svg" />
+        <!-- TODO: add easter egg  -->
+      </p>
+    </div>
+    <div class="flex justify-end items-center">
+      <p class="p-footer pr-2">tp.team11.fiit@gmail.com</p>
+      <img class="w-14 h-12" src="/src/images/email.png" />
+    </div>
+  </footer>
 </html>
