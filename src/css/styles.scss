@@ -9,13 +9,13 @@ html {
 
 @layer components {
   .wrapper {
-    @apply mx-auto px-3 max-w-1600;
+    @apply mx-auto px-3 max-w-[1600px];
   }
 }
 
 @layer utilities {
   .h1-sections {
-    @apply font-extrabold text-6xl text-center leading-l-loose;
+    @apply font-extrabold text-6xl text-center leading-[7rem];
   }
 
   .h2-profiles-6xl-bold {
@@ -35,11 +35,11 @@ html {
   }
 
   .img-gallery {
-    @apply h-300 border-4 border-solid border-blue object-cover;
+    @apply border-[5px] border-solid border-blue;
   }
 
   .img-profiles {
-    @apply h-250 w-250 border-4 border-solid border-blue rounded-3xl object-cover;
+    @apply border-4 border-solid border-blue rounded-3xl;
   }
 
   .text-center-margin {
@@ -63,7 +63,7 @@ html {
   }
 
   .p-body {
-    @apply text-center-margin font-medium text-2xl leading-9;
+    @apply text-center-margin font-medium text-[1.5rem];
   }
 
   .p-footer {
