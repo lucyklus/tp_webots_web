@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,10 +14,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
     <title>Slniečka</title>
   </head>
   <body>
@@ -25,7 +21,7 @@
       <nav class="wrapper flex items-center justify-between w-full py-3">
         <!-- TODO: stick nav after scroll -->
         <span class="flex gap-1.5 items-center w-12 h-12 font-normal text-3xl">
-          <img src="/icons/icon.svg" />
+          <img alt="Slniečka" src="/icons/icon.svg" />
           Slniečka
         </span>
         <ul>
@@ -59,7 +55,11 @@
           </h1>
         </div>
         <div class="flex flex-col justify-center">
-          <img src="/src/images/player.png" class="mt-10 mb-5 ml-24" />
+          <img
+            alt="Hráč"
+            src="/src/images/player.png"
+            class="mt-10 mb-5 ml-24"
+          />
           <p class="text-center-margin p-body leading-9">
             Pri spojení pojmov robotika a <br />umelá inteligencia (AI) sa nám
             <br />zväčša vynorí predstava o <br />humanoidných robotoch z
@@ -121,10 +121,10 @@
     </div>
     <div class="bg-grey">
       <div class="wrapper flex justify-evenly p-20 gap-10">
-        <img class="img-gallery" src="/src/images/maps/map1.png" />
-        <img class="img-gallery" src="/src/images/maps/map2.png" />
-        <img class="img-gallery" src="/src/images/maps/map3.png" />
-        <img class="img-gallery" src="/src/images/maps/map4.png" />
+        <img alt="Mapa 1" class="img-gallery" src="/src/images/maps/map1.png" />
+        <img alt="Mapa 2" class="img-gallery" src="/src/images/maps/map2.png" />
+        <img alt="Mapa 3" class="img-gallery" src="/src/images/maps/map3.png" />
+        <img alt="Mapa 4" class="img-gallery" src="/src/images/maps/map4.png" />
       </div>
     </div>
     <div class="bg-grey">
@@ -135,19 +135,25 @@
           <span class="h1-sections text-purple">TÍMOM</span>
         </h1>
         <h2 class="text-center">
-          <span class="h2-profiles-6xl-bold">71,</span>
-          <span class="h2-profiles-4xl">43</span>
-          <span class="h2-profiles-6xl-bold">% </span>
-          <span class="h2-profiles-4xl">tímu tvoria</span>
-          <span class="h2-profiles-4xl">dievčatá</span>
-          <span class="h2-profiles-6xl-bold">!</span>
+          <span class="h2-profiles-6xl-bold">
+            71,<span class="h2-profiles-4xl font-thin">43</span>%<span
+              class="h2-profiles-4xl font-thin"
+            >
+              tímu tvoria dievčatá
+            </span>
+            !
+          </span>
         </h2>
         <div class="grid grid-cols-2 mt-10 pb-40">
           <div
             class="items-end flex flex-col gap-10 pt-8 border-solid border-r-4"
           >
             <span class="flex justify-end items-center">
-              <img class="img-profiles" src="/src/images/profiles/martin.png" />
+              <img
+                alt="Martin"
+                class="img-profiles"
+                src="/src/images/profiles/martin.png"
+              />
               <span class="flex flex-col items-center">
                 <span class="text-profiles-name w-[360px]">
                   Ing. Martin Komák, PhD.
@@ -156,14 +162,22 @@
               </span>
             </span>
             <span class="flex justify-end items-center">
-              <img class="img-profiles" src="/src/images/profiles/matej.png" />
+              <img
+                alt="Matej"
+                class="img-profiles"
+                src="/src/images/profiles/matej.png"
+              />
               <span class="flex flex-col items-center">
                 <span class="text-profiles-name w-60">Matej B.</span>
                 <span class="text-profiles-role">DevOps</span>
               </span>
             </span>
             <span class="flex justify-end items-center">
-              <img class="img-profiles" src="/src/images/profiles/lucia.png" />
+              <img
+                alt="Lucia"
+                class="img-profiles"
+                src="/src/images/profiles/lucia.png"
+              />
               <span class="flex flex-col items-center">
                 <span class="text-profiles-name w-[360px]">Lucia M.</span>
                 <span class="text-profiles-role">
@@ -173,7 +187,11 @@
               </span>
             </span>
             <span class="flex justify-end items-center">
-              <img class="img-profiles" src="/src/images/profiles/silvia.png" />
+              <img
+                alt="Silvia"
+                class="img-profiles"
+                src="/src/images/profiles/silvia.png"
+              />
               <span class="flex flex-col items-center">
                 <span class="text-profiles-name w-60">Silvia Š.</span>
                 <span class="text-profiles-role">
@@ -191,6 +209,7 @@
                 <span class="text-profiles-role">ML Engineer</span>
               </span>
               <img
+                alt="Katarina"
                 class="img-profiles"
                 src="/src/images/profiles/katarina.png"
               />
@@ -205,7 +224,11 @@
                   Expert
                 </span>
               </span>
-              <img class="img-profiles" src="/src/images/profiles/andrei.png" />
+              <img
+                alt="Andrei"
+                class="img-profiles"
+                src="/src/images/profiles/andrei.png"
+              />
             </span>
             <span class="flex justify-start items-center">
               <span class="flex flex-col items-center">
@@ -213,6 +236,7 @@
                 <span class="text-profiles-role">ML Engineer</span>
               </span>
               <img
+                alt="Michaela"
                 class="img-profiles"
                 src="/src/images/profiles/michaela.png"
               />
@@ -226,7 +250,11 @@
                   ML Engineer
                 </span>
               </span>
-              <img class="img-profiles" src="/src/images/profiles/jana.png" />
+              <img
+                alt="Jana"
+                class="img-profiles"
+                src="/src/images/profiles/jana.png"
+              />
             </span>
           </div>
         </div>
@@ -253,12 +281,11 @@
               class="flex items-center gap-2 mb-5"
             >
               <h2 id="firstSemesterTitle" class="h2-documents">1. semester</h2>
-              <span
-                id="firstSemesterArrow"
-                class="material-symbols-outlined text-4xl font-black"
-              >
-                arrow_downward
-              </span>
+              <img
+                alt="Šípka dole"
+                class="icon-downward"
+                src="/src/images/arrow_downward.svg"
+              />
             </div>
             <div
               id="secondSemester"
@@ -266,12 +293,11 @@
               class="flex items-center gap-2 mb-5"
             >
               <h2 id="secondSemesterTitle" class="h2-documents">2. semester</h2>
-              <span
-                id="secondSemesterArrow"
-                class="material-symbols-outlined text-4xl font-black"
-              >
-                arrow_downward
-              </span>
+              <img
+                alt="Šípka dole"
+                class="icon-downward"
+                src="/src/images/arrow_downward.svg"
+              />
             </div>
           </div>
           <div id="firstSemesterRecords" class="content-documents"></div>
@@ -287,26 +313,27 @@
         </div>
       </div>
     </div>
-    <div id="kontakt"></div>
+
+    <footer id="kontakt" class="wrapper grid grid-cols-3 w-full px-10 py-5">
+      <div class="flex items-center">
+        <img alt="Mailbox" class="w-14 h-14" src="/src/images/mailbox.png" />
+        <p class="p-footer">
+          Fakulta informatiky a informačných technológií <br />Ilkovičova 6276/2
+        </p>
+      </div>
+      <div class="items-center">
+        <h1 class="font-extrabold text-4xl text-center text-purple">KONTAKT</h1>
+        <p class="flex p-footer items-center justify-center">
+          &copy; 2022 tím 11
+          <img alt="Slniečko" class="w-8 h-8" src="/icons/icon.svg" />
+          <!-- TODO: add easter egg  -->
+        </p>
+      </div>
+      <div class="flex justify-end items-center">
+        <p class="p-footer pr-2">tp.team11.fiit@gmail.com</p>
+        <img alt="E-mail" class="w-14 h-12" src="/src/images/email.png" />
+      </div>
+    </footer>
+    <script type="module" src="./src/js/main.js"></script>
   </body>
-  <footer id="kontakt" class="wrapper grid grid-cols-3 w-full px-10 py-5">
-    <div class="flex items-center">
-      <img class="w-14 h-14" src="/src/images/mailbox.png" />
-      <p class="p-footer">
-        Fakulta informatiky a informačných technológií <br />Ilkovičova 6276/2
-      </p>
-    </div>
-    <div class="items-center">
-      <h1 class="font-extrabold text-4xl text-center text-purple">KONTAKT</h1>
-      <p class="flex p-footer items-center justify-center">
-        &copy; 2022 tím 11
-        <img class="w-8 h-8" src="/icons/icon.svg" />
-        <!-- TODO: add easter egg  -->
-      </p>
-    </div>
-    <div class="flex justify-end items-center">
-      <p class="p-footer pr-2">tp.team11.fiit@gmail.com</p>
-      <img class="w-14 h-12" src="/src/images/email.png" />
-    </div>
-  </footer>
 </html>
