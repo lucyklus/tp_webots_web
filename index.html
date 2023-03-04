@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="./src/js/main.js"></script>
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" href="/icons/favicon.ico" sizes="any" />
     <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
@@ -246,27 +247,40 @@
         <div class="border-solid border-4 mb-24 w-1/2">
           <h2 class="h2-documents text-center-margin mt-2">Zápisnice</h2>
           <div class="flex justify-between px-5">
-            <div class="flex items-center gap-2">
-              <h2 class="h2-documents">1. semester</h2>
-              <span class="material-symbols-outlined text-4xl font-black">
+            <div
+              id="firstSemester"
+              style="cursor: pointer"
+              class="flex items-center gap-2 mb-5"
+            >
+              <h2 id="firstSemesterTitle" class="h2-documents">1. semester</h2>
+              <span
+                id="firstSemesterArrow"
+                class="material-symbols-outlined text-4xl font-black"
+              >
                 arrow_downward
               </span>
             </div>
-            <div class="flex items-center gap-2">
-              <h2 class="h2-documents">2. semester</h2>
-              <span class="material-symbols-outlined text-4xl font-black">
+            <div
+              id="secondSemester"
+              style="cursor: pointer"
+              class="flex items-center gap-2 mb-5"
+            >
+              <h2 id="secondSemesterTitle" class="h2-documents">2. semester</h2>
+              <span
+                id="secondSemesterArrow"
+                class="material-symbols-outlined text-4xl font-black"
+              >
                 arrow_downward
               </span>
             </div>
           </div>
-          <div class="content-documents">
-            <!-- TODO: load this content dynamically with JS -->
-          </div>
+          <div id="firstSemesterRecords" class="content-documents"></div>
+          <div id="secondSemesterRecords" class="content-documents"></div>
         </div>
         <div class="border-solid border-4 mb-24 w-1/2">
           <h2 class="h2-documents text-center-margin mt-2">Dokumentácie</h2>
           <div class="flex justify-between px-5">
-            <div class="content-documents">
+            <div id="documents" class="content-documents">
               <!-- TODO: load this content dynamically with JS -->
             </div>
           </div>
@@ -274,7 +288,6 @@
       </div>
     </div>
     <div id="kontakt"></div>
-    <script type="module" defer src="./src/js/main.js"></script>
   </body>
   <footer id="kontakt" class="wrapper grid grid-cols-3 w-full px-10 py-5">
     <div class="flex items-center">
