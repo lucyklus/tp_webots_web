@@ -17,9 +17,8 @@
     <title>Slniečka</title>
   </head>
   <body>
-    <div class="bg-turquoise">
-      <nav class="wrapper flex items-center justify-between w-full py-3">
-        <!-- TODO: stick nav after scroll -->
+    <div class="bg-turquoise fixed w-full top-0 left-0 right-0">
+      <nav class="wrapper flex items-center justify-between py-3">
         <span class="flex gap-1.5 items-center w-12 h-12 font-normal text-3xl">
           <img alt="Slniečka" src="/icons/icon.svg" />
           Slniečka
@@ -274,14 +273,15 @@
         <h1 class="h1-sections text-purple mb-20">DOKUMENTY</h1>
         <div class="border-solid border-4 mb-24 w-1/2">
           <h2 class="h2-documents text-center-margin mt-2">Zápisnice</h2>
-          <div class="flex justify-between px-5">
+          <div class="grid grid-cols-2">
             <div
               id="firstSemester"
               style="cursor: pointer"
-              class="flex items-center gap-2 mb-5"
+              class="flex justify-center gap-2 mb-3 hover:opacity-70"
             >
               <h2 id="firstSemesterTitle" class="h2-documents">1. semester</h2>
               <img
+                id="firstSemesterArrow"
                 alt="Šípka dole"
                 class="icon-downward"
                 src="/src/images/arrow_downward.svg"
@@ -290,25 +290,26 @@
             <div
               id="secondSemester"
               style="cursor: pointer"
-              class="flex items-center gap-2 mb-5"
+              class="flex justify-center gap-2 mb-3 hover:opacity-70"
             >
               <h2 id="secondSemesterTitle" class="h2-documents">2. semester</h2>
               <img
+                id="secondSemesterArrow"
                 alt="Šípka dole"
                 class="icon-downward"
                 src="/src/images/arrow_downward.svg"
               />
             </div>
           </div>
-          <div id="firstSemesterRecords" class="content-documents"></div>
-          <div id="secondSemesterRecords" class="content-documents"></div>
+          <div class="grid grid-cols-2 mb-5">
+            <div id="firstSemesterRecords" class="content-documents"></div>
+            <div id="secondSemesterRecords" class="content-documents"></div>
+          </div>
         </div>
         <div class="border-solid border-4 mb-24 w-1/2">
           <h2 class="h2-documents text-center-margin mt-2">Dokumentácie</h2>
           <div class="flex justify-between px-5">
-            <div id="documents" class="content-documents">
-              <!-- TODO: load this content dynamically with JS -->
-            </div>
+            <div id="documents" class="content-documents"></div>
           </div>
         </div>
       </div>
@@ -325,8 +326,12 @@
         <h1 class="font-extrabold text-4xl text-center text-purple">KONTAKT</h1>
         <p class="flex p-footer items-center justify-center">
           &copy; 2022 tím 11
-          <img alt="Slniečko" class="w-8 h-8" src="/icons/icon.svg" />
-          <!-- TODO: add easter egg  -->
+          <a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+            target="_blank"
+          >
+            <img alt="Slniečko" class="w-8 h-8" src="/icons/icon.svg" />
+          </a>
         </p>
       </div>
       <div class="flex justify-end items-center">

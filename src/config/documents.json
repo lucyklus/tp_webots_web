@@ -1,0 +1,76 @@
+{
+  "firstSemester": [
+    {
+      "id": 1,
+      "name": "Zápisnica č.1",
+      "src" : ""
+    },
+    {
+      "id": 2,
+      "name": "Zápisnica č.2",
+      "src" : ""
+    },
+    {
+      "id": 3,
+      "name": "Zápisnica č.3",
+      "src" : ""
+    },
+    {
+      "id": 4,
+      "name": "Zápisnica č.4",
+      "src" : ""
+    },
+    {
+      "id": 5,
+      "name": "Zápisnica č.5",
+      "src" : ""
+    },
+    {
+      "id": 6,
+      "name": "Zápisnica č.6",
+      "src" : ""
+    },
+    {
+      "id": 7,
+      "name": "Zápisnica č.7",
+      "src" : ""
+    },
+    {
+      "id": 8,
+      "name": "Zápisnica č.8",
+      "src" : ""
+    },
+    {
+      "id": 9,
+      "name": "Zápisnica č.9",
+      "src" : ""
+    },
+    {
+      "id": 10,
+      "name": "Zápisnica č.10",
+      "src" : ""
+    },
+    {
+      "id": 11,
+      "name": "Zápisnica č.11",
+      "src" : ""
+    }    
+  ],
+  "secondSemester": [
+    {
+      "id": 12,
+      "name": "Zápisnica č.12",
+      "src" : ""
+    },
+    {
+      "id": 14,
+      "name": "Zápisnica č.13",
+      "src" : ""
+    },
+    {
+      "id": 15,
+      "name": "Zápisnica č.14",
+      "src" : ""
+    }
+  ]
+}
