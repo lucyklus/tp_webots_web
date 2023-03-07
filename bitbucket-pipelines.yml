@@ -9,7 +9,6 @@ definitions:
           script:
             - npm install
             - npm run build
-            - sed -i 's/\(src="\|href="\)\//\1.\//g' dist/index.html
           artifacts:
             - 'dist/**'
     - step: &deploy
@@ -29,6 +28,7 @@ pipelines:
     master:
       - step: *build-project
       - step: *deploy
-    feature/FTT1-59-*:
+  custom:
+    manual-trigger:
       - step: *build-project
       - step: *deploy
