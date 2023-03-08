@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply text-blue;
+  @apply font-roboto;
+}
+
+@layer components {
+  .wrapper {
+    @apply mx-auto px-3 max-w-[1600px];
+  }
+}
+
+@layer utilities {
+  .h1-sections {
+    @apply font-extrabold text-6xl text-center leading-[7rem];
+  }
+
+  .h2-profiles-6xl-bold {
+    @apply font-bold text-6xl;
+  }
+
+  .h2-profiles-4xl {
+    @apply text-4xl;
+  }
+
+  .h2-documents {
+    @apply text-3xl font-semibold;
+  }
+
+  .border-purple {
+    @apply border-2 border-solid border-blue;
+  }
+
+  .img-gallery {
+    @apply border-[5px] border-solid border-blue;
+  }
+
+  .img-profiles {
+    @apply border-4 border-solid border-blue rounded-3xl;
+  }
+
+  .text-center-margin {
+    @apply text-center mb-5;
+  }
+
+  .text-profiles {
+    @apply text-[1.3rem] text-center min-w-[3rem];
+  }
+
+  .text-profiles-name {
+    @apply text-profiles border-solid border-b-4;
+  }
+
+  .text-profiles-role {
+    @apply text-profiles text-purple font-medium leading-tight;
+  }
+
+  .content-documents {
+    // TODO: Add content
+  }
+
+  .p-body {
+    @apply text-center-margin font-medium text-[1.5rem];
+  }
+
+  .p-footer {
+    @apply font-medium text-sm;
+  }
+
+  .icon-downward {
+    @apply w-10 h-10;
+  }
+}

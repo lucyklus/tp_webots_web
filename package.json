@@ -6,7 +6,7 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=\"http://labss2.fiit.stuba.sk/TeamProject/2022/team11/\"",
     "preview": "vite preview"
   },
   "devDependencies": {
