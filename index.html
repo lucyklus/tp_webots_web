@@ -274,36 +274,34 @@
         <div class="border-solid border-4 mb-24 w-1/2">
           <h2 class="h2-documents text-center-margin mt-2">Zápisnice</h2>
           <div class="grid grid-cols-2">
-            <div
-              id="firstSemester"
-              style="cursor: pointer"
-              class="flex justify-center gap-2 mb-3 hover:opacity-70"
-            >
-              <h2 id="firstSemesterTitle" class="h2-documents">1. semester</h2>
-              <img
-                id="firstSemesterArrow"
-                alt="Šípka dole"
-                class="icon-downward"
-                src="/src/images/arrow_downward.svg"
-              />
+            <div class="flex flex-col">
+              <span
+                id="firstSemesterWrapper"
+                class="flex justify-center gap-2 mb-3 hover:opacity-70 cursor-pointer"
+              >
+                <h2 class="h2-documents semesterTitle">1. semester</h2>
+                <img
+                  alt="Šípka dole"
+                  class="icon-downward semesterArrow"
+                  src="/src/images/arrow_downward.svg"
+                />
+              </span>
+              <div class="semesterRecords" semester="first"></div>
             </div>
-            <div
-              id="secondSemester"
-              style="cursor: pointer"
-              class="flex justify-center gap-2 mb-3 hover:opacity-70"
-            >
-              <h2 id="secondSemesterTitle" class="h2-documents">2. semester</h2>
-              <img
-                id="secondSemesterArrow"
-                alt="Šípka dole"
-                class="icon-downward"
-                src="/src/images/arrow_downward.svg"
-              />
+            <div class="flex flex-col">
+              <span
+                id="secondSemesterWrapper"
+                class="flex justify-center gap-2 mb-3 hover:opacity-70 cursor-pointer"
+              >
+                <h2 class="h2-documents semesterTitle">2. semester</h2>
+                <img
+                  alt="Šípka dole"
+                  class="icon-downward semesterArrow"
+                  src="/src/images/arrow_downward.svg"
+                />
+              </span>
+              <div class="semesterRecords" semester="second"></div>
             </div>
-          </div>
-          <div class="grid grid-cols-2 mb-5">
-            <div id="firstSemesterRecords" class="content-documents"></div>
-            <div id="secondSemesterRecords" class="content-documents"></div>
           </div>
         </div>
         <div class="border-solid border-4 mb-24 w-1/2">

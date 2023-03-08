@@ -1,9 +1,8 @@
 import '../css/styles.css';
 import filesOfSemesters from '../config/documents.json';
 
-function viewSemesterRecords(semester) {
-  const recordsDiv = document.getElementById(`${semester}Records`);
-  const files = filesOfSemesters[semester];
+function viewSemesterRecords(semesterRecords) {
+  const files = filesOfSemesters[semesterRecords.getAttribute('semester')];
 
   const saveImg = document.createElement('img');
   saveImg.setAttribute('src', '/src/images/save.png');
@@ -20,29 +19,29 @@ function viewSemesterRecords(semester) {
     recordLink.setAttribute('target', '_blank');
     recordLink.appendChild(saveImg.cloneNode(true));
     record.appendChild(recordLink.cloneNode(true));
-    recordsDiv.appendChild(record);
+    semesterRecords.appendChild(record);
   }
 }
 
-function onSemesterClick(semester) {
-  const semesterTitle = document.getElementById(`${semester}Title`);
-  const semesterArrow = document.getElementById(`${semester}Arrow`);
-  const semesterDiv = document.getElementById(semester);
+function onSemesterClick(event) {
+  const semesterWrapper = event.currentTarget;
+  const semesterTitle = semesterWrapper.querySelector('.semesterTitle');
+  const semesterArrow = semesterWrapper.querySelector('.semesterArrow');
 
-  if (semesterDiv.hasAttribute('clicked')) {
-    semesterDiv.removeAttribute('clicked');
-    semesterTitle.classList.remove('text-purple');
-    semesterArrow.classList.remove('icon-purple');
-    semesterArrow.classList.remove('rotate-180');
-    document.getElementById(`${semester}Records`).innerHTML = '';
+  semesterTitle.classList.toggle('text-purple');
+  semesterArrow.classList.toggle('icon-purple');
+  semesterArrow.classList.toggle('rotate-180');
+
+  const semesterRecords = semesterWrapper.parentNode.querySelector('.semesterRecords');
+
+  if (semesterWrapper.hasAttribute('clicked')) {
+    semesterWrapper.removeAttribute('clicked');
+    semesterRecords.innerHTML = '';
   } else {
-    semesterDiv.setAttribute('clicked', '');
-    semesterTitle.classList.add('text-purple');
-    semesterArrow.classList.add('icon-purple');
-    semesterArrow.classList.add('rotate-180');
-    viewSemesterRecords(semester);
+    semesterWrapper.setAttribute('clicked', '');
+    viewSemesterRecords(semesterRecords);
   }
 }
 
-document.getElementById('firstSemester').addEventListener('click', () => onSemesterClick('firstSemester'));
-document.getElementById('secondSemester').addEventListener('click', () => onSemesterClick('secondSemester'));
+document.getElementById('firstSemesterWrapper').addEventListener('click', onSemesterClick);
+document.getElementById('secondSemesterWrapper').addEventListener('click', onSemesterClick);
