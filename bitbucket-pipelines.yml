@@ -1,0 +1,34 @@
+image: node:lts
+
+definitions: 
+  steps:
+    - step: &build-project
+          name: Build project
+          caches:
+            - node
+          script:
+            - npm install
+            - npm run build
+          artifacts:
+            - 'dist/**'
+    - step: &deploy
+          name: Deploy latest
+          caches:
+            - node
+          script:
+            - pipe: atlassian/sftp-deploy:0.5.11
+              variables:
+                USER: $PIPE_USER
+                SERVER: $PIPE_SERVER
+                REMOTE_PATH: '/srv/webpage'
+                LOCAL_PATH: 'dist/**'
+
+pipelines:
+  branches:
+    master:
+      - step: *build-project
+      - step: *deploy
+  custom:
+    manual-trigger:
+      - step: *build-project
+      - step: *deploy
