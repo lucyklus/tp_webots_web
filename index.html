@@ -286,7 +286,22 @@
                   src="/src/images/arrow_downward.svg"
                 />
               </span>
-              <div class="semesterRecords" semester="first"></div>
+              <div class="semesterRecords hidden" semester="first">
+                <% for(const record of records.first) {%>
+                <span class="flex justify-center">
+                  <p class="text-blue font-roboto text-2xl font-bold w-[170px]">
+                    <%= record.name %>
+                  </p>
+                  <a href="<%= record.src %>" target="_blank" rel="noreferrer">
+                    <img
+                      alt="Stiahnuť"
+                      class="img-save"
+                      src="/src/images/save.png"
+                    />
+                  </a>
+                </span>
+                <% } %>
+              </div>
             </div>
             <div class="flex flex-col">
               <span
@@ -300,7 +315,22 @@
                   src="/src/images/arrow_downward.svg"
                 />
               </span>
-              <div class="semesterRecords" semester="second"></div>
+              <div class="semesterRecords hidden" semester="second">
+                <% for(const record of records.second) {%>
+                <span class="flex justify-center">
+                  <p class="text-blue font-roboto text-2xl font-bold w-[170px]">
+                    <%= record.name %>
+                  </p>
+                  <a href="<%= record.src %>" target="_blank" rel="noreferrer">
+                    <img
+                      alt="Stiahnuť"
+                      class="img-save"
+                      src="/src/images/save.png"
+                    />
+                  </a>
+                </span>
+                <% } %>
+              </div>
             </div>
           </div>
         </div>
