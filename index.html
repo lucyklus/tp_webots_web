@@ -72,9 +72,9 @@
       </nav>
     </div>
     <div class="wrapper">
-      <div id="domov" class="grid grid-cols-2 mt-20 mb-10">
+      <div id="domov" class="grid md:grid-cols-2 mt-20 mb-10">
         <div class="flex justify-center">
-          <h1 class="text-right font-extrabold text-8xl leading-[7.5rem]">
+          <h1 class="text-right font-extrabold text-3xl md:text-8xl mt-20 md:leading-[7.5rem]">
             Umelá <br />inteligencia v <br />simulátore<br />
             Webots
           </h1>
@@ -100,7 +100,7 @@
       </div>
     </div>
     <div class="wrapper">
-      <div id="projekt" class="m-24 border-[5px] border-solid border-blue">
+      <div id="projekt" class="md:m-24 border-[5px] border-solid border-blue">
         <h1 class="h1-sections">PROJEKT</h1>
         <div class="py-5">
           <p class="p-body">
@@ -145,7 +145,7 @@
       </div>
     </div>
     <div class="bg-grey">
-      <div class="wrapper flex justify-evenly p-20 gap-10">
+      <div class="wrapper flex flex-col md:flex-row justify-evenly p-20 gap-10">
         <img alt="Mapa 1" class="img-gallery" src="/src/images/maps/map1.png" />
         <img alt="Mapa 2" class="img-gallery" src="/src/images/maps/map2.png" />
         <img alt="Mapa 3" class="img-gallery" src="/src/images/maps/map3.png" />
@@ -169,9 +169,9 @@
             !
           </span>
         </h2>
-        <div class="grid grid-cols-2 mt-10 pb-40">
+        <div class="grid md:grid-cols-2 mt-10 pb-40">
           <div
-            class="items-end flex flex-col gap-10 pt-8 border-solid border-r-4"
+            class="items-end flex flex-col gap-10 pt-8 border-solid md:border-r-4"
           >
             <span class="flex justify-end items-center">
               <img
@@ -257,7 +257,7 @@
             </span>
             <span class="flex justify-start items-center">
               <span class="flex flex-col items-center">
-                <span class="text-profiles-name w-[360px]">Michaela H.</span>
+                <span class="text-profiles-name w-[220px] md:w-[360px]">Michaela H.</span>
                 <span class="text-profiles-role">ML Engineer</span>
               </span>
               <img
@@ -297,9 +297,9 @@
     <div class="bg-mauve">
       <div id="dokumenty" class="wrapper flex flex-col items-center">
         <h1 class="h1-sections text-purple mb-20">DOKUMENTY</h1>
-        <div class="border-solid border-4 mb-24 w-1/2">
+        <div class="border-solid border-4 mb-24 w-3/4 md:w-1/2">
           <h2 class="h2-documents text-center-margin mt-2">Zápisnice</h2>
-          <div class="grid grid-cols-2">
+          <div class="grid md:grid-cols-2">
             <div class="flex flex-col">
               <span
                 id="firstSemesterWrapper"
@@ -329,7 +329,7 @@
                 <% } %>
               </div>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col mt-2 md:mt-0">
               <span
                 id="secondSemesterWrapper"
                 class="flex justify-center gap-2 mb-3 hover:opacity-70 cursor-pointer"
