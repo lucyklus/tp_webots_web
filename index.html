@@ -17,13 +17,13 @@
     <title>Slniečka</title>
   </head>
   <body>
-    <div class="bg-turquoise fixed w-full top-0 left-0 right-0">
+    <div class="bg-turquoise fixed w-full top-0 left-0 right-0 h-20">
       <nav class="wrapper flex items-center justify-between py-3">
         <span class="flex gap-1.5 items-center w-12 h-12 font-normal text-3xl">
           <img alt="Slniečka" src="/icons/icon.svg" />
           Slniečka
         </span>
-        <ul>
+        <ul class="hidden md:block">
           <li class="mr-10 inline">
             <a class="font-medium text-2xl" href="#domov">Domov</a>
           </li>
@@ -43,6 +43,32 @@
             <a class="font-medium text-2xl" href="#kontakt">Kontakt</a>
           </li>
         </ul>
+        <span class="menu-wrapper md:hidden">
+          <img class="w-10 h-10" alt="Menu" src="/src/images/menu.svg" />
+          <input
+            type="checkbox"
+            class="absolute w-10 h-10 block top-3 z-2 opacity-0"
+          />
+          <ul class="menu absolute right-0 top-20 w-full flex-col items-center bg-turquoise pb-4">
+            <li class="border-b-2">
+              <a class="font-medium text-2xl" href="#domov">Domov</a>
+            </li>
+            <li class="mt-10 border-b-2">
+              <a class="font-medium text-2xl" href="#projekt">Projekt</a>
+            </li>
+            <li class="mt-10 border-b-2">
+              <a class="font-medium text-2xl" href="#tim">Tím</a>
+            </li>
+            <li class="mt-10 border-b-2">
+              <a class="font-medium text-2xl" href="#simulacia">Simulácia</a>
+            </li>
+            <li class="mt-10 border-b-2">
+              <a class="font-medium text-2xl" href="#dokumenty">Dokumenty</a>
+            </li>
+            <li class="mt-10 border-b-2">
+              <a class="font-medium text-2xl" href="#kontakt">Kontakt</a>
+            </li>
+        </span>
       </nav>
     </div>
     <div class="wrapper">

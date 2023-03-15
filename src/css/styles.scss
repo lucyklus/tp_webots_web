@@ -82,4 +82,14 @@ html {
     filter: invert(11%) sepia(57%) saturate(5198%) hue-rotate(299deg)
       brightness(101%) contrast(92%);
   }
+  .menu-wrapper {
+    .menu {
+      display: none;
+    }
+    input[type="checkbox"]:checked {
+      + .menu {
+        display: flex;
+      }
+    }
+  }
 }

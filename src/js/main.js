@@ -1,4 +1,4 @@
-import '../css/styles.css';
+import '../css/styles.scss';
 
 function onSemesterClick(event) {
   const semesterWrapper = event.currentTarget;
