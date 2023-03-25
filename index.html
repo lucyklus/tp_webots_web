@@ -23,7 +23,7 @@
           <img alt="Slniečka" src="/icons/icon.svg" />
           Slniečka
         </span>
-        <ul class="hidden md:block">
+        <ul class="hidden lg:block">
           <li class="mr-10 inline">
             <a class="font-medium text-2xl" href="#domov">Domov</a>
           </li>
@@ -43,7 +43,7 @@
             <a class="font-medium text-2xl" href="#kontakt">Kontakt</a>
           </li>
         </ul>
-        <span class="menu-wrapper md:hidden">
+        <span class="menu-wrapper lg:hidden">
           <img class="w-10 h-10" alt="Menu" src="/src/images/menu.svg" />
           <input
             type="checkbox"
@@ -75,10 +75,10 @@
       </nav>
     </div>
     <div class="wrapper">
-      <div id="domov" class="grid md:grid-cols-2 mt-20 mb-10">
+      <div id="domov" class="grid lg:grid-cols-2 mt-20 mb-10">
         <div class="flex justify-center">
           <h1
-            class="text-center leading-[4.5rem] font-extrabold text-5xl mt-5 md:mt-20 md:text-right md:text-8xl md:leading-[7.5rem]"
+            class="text-center leading-[4.5rem] font-extrabold text-5xl mt-5 sm:mt-10 sm:text-7xl sm:leading-[6rem] md:mt-20 md:text-8xl md:leading-[7.5rem] lg:text-right"
           >
             Umelá <br />inteligencia v <br />simulátore<br />
             Webots
@@ -107,7 +107,7 @@
     <div class="wrapper">
       <div
         id="projekt"
-        class="mb-20 md:m-24 border-[5px] border-solid border-blue"
+        class="mb-20 md:m-16 lg:m-24 border-[5px] border-solid border-blue"
       >
         <h1 class="h1-sections">PROJEKT</h1>
         <div class="py-5">
@@ -153,7 +153,9 @@
       </div>
     </div>
     <div class="bg-grey">
-      <div class="wrapper flex flex-col md:flex-row justify-evenly p-20 gap-10">
+      <div
+        class="wrapper flex flex-col items-center md:flex-row justify-evenly p-20 gap-10"
+      >
         <img alt="Mapa 1" class="img-gallery" src="/src/images/maps/map1.png" />
         <img alt="Mapa 2" class="img-gallery" src="/src/images/maps/map2.png" />
         <img alt="Mapa 3" class="img-gallery" src="/src/images/maps/map3.png" />
@@ -162,22 +164,22 @@
     </div>
     <div class="bg-grey">
       <div id="tim" class="wrapper px-5">
-        <h1 class="mt-24 mb-3 pt-20 md:mb-5 md:pt-40 text-center">
-          <span class="text-5xl md:text-6xl"> Zoznámte sa s </span>
+        <h1 class="mt-24 mb-3 pt-20 md:mb-5 lg:pt-40 text-center">
+          <span class="text-4xl sm:text-6xl"> Zoznámte sa s </span>
           <br />
           <span class="h1-sections text-purple">TÍMOM</span>
         </h1>
         <h2 class="text-center">
-          <span class="text-4xl font-bold md:text-6xl">
-            71,<span class="text-2xl font-thin md:text-4xl">43</span>%<span
-              class="text-2xl font-thin md:text-4xl"
+          <span class="text-3xl font-bold sm:text-6xl">
+            71,<span class="text-xl font-thin sm:text-4xl">43</span>%<span
+              class="text-xl font-thin sm:text-4xl"
             >
               tímu tvoria dievčatá
             </span>
             !
           </span>
         </h2>
-        <div class="grid md:grid-cols-2 pb-20 md:mt-10 md:pb-40">
+        <div class="grid md:grid-cols-2 pb-20 md:mt-10 md:mb-10 lg:pb-40">
           <div
             class="items-end flex flex-col gap-10 pt-8 border-solid md:border-r-4"
           >
@@ -188,7 +190,9 @@
                 src="/src/images/profiles/martin.png"
               />
               <span class="flex flex-col items-center">
-                <span class="text-profiles-name w-[250px] md:w-[300px]">
+                <span
+                  class="text-profiles-name w-[250px] sm:w-[300px] md:w-[280px]"
+                >
                   Ing. Martin Komák, PhD.
                 </span>
                 <span class="text-profiles-role">Product Owner</span>
@@ -201,7 +205,7 @@
                 src="/src/images/profiles/matej.png"
               />
               <span class="flex flex-col items-center">
-                <span class="text-profiles-name w-[180px] md:w-[200px]"
+                <span class="text-profiles-name w-[180px] sm:w-[200px]"
                   >Bc. Matej B.</span
                 >
                 <span class="text-profiles-role">DevOps</span>
@@ -214,7 +218,8 @@
                 src="/src/images/profiles/lucia.png"
               />
               <span class="flex flex-col items-center">
-                <span class="text-profiles-name w-[250px] md:w-[300px]"
+                <span
+                  class="text-profiles-name w-[250px] sm:w-[300px] md:w-[280px]"
                   >Bc. Lucia M.</span
                 >
                 <span class="text-profiles-role">Web Dev</span>
@@ -227,7 +232,7 @@
                 src="/src/images/profiles/silvia.png"
               />
               <span class="flex flex-col items-center">
-                <span class="text-profiles-name w-[180px] md:w-[200px]"
+                <span class="text-profiles-name w-[180px] sm:w-[200px]"
                   >Bc. Silvia Š.</span
                 >
                 <span class="text-profiles-role">Documentarist</span>
@@ -237,7 +242,8 @@
           <div class="items-start flex flex-col gap-10 pt-10 md:pt-24">
             <span class="flex justify-start items-center">
               <span class="flex flex-col items-center">
-                <span class="text-profiles-name w-[250px] md:w-[300px]"
+                <span
+                  class="text-profiles-name w-[250px] sm:w-[300px] md:w-[280px]"
                   >Bc. Katarína B.</span
                 >
                 <span class="text-profiles-role">ML Engineer</span>
@@ -264,7 +270,8 @@
             </span>
             <span class="flex justify-start items-center">
               <span class="flex flex-col items-center">
-                <span class="text-profiles-name w-[250px] md:w-[300px]"
+                <span
+                  class="text-profiles-name w-[250px] sm:w-[300px] md:w-[280px]"
                   >Bc. Michaela H.</span
                 >
                 <span class="text-profiles-role">ML Engineer</span>
@@ -302,7 +309,7 @@
     <div class="bg-mauve">
       <div id="dokumenty" class="wrapper flex flex-col items-center">
         <h1 class="h1-sections text-purple mb-5 md:mb-20">DOKUMENTY</h1>
-        <div class="border-solid border-4 pb-5 mb-10 md:mb-24 w-3/4 md:w-1/2">
+        <div class="border-solid border-4 pb-5 mb-10 md:mb-24 w-3/4">
           <h2 class="h2-documents text-center-margin mt-2">Zápisnice</h2>
           <div class="grid md:grid-cols-2">
             <div class="flex flex-col">
@@ -365,7 +372,7 @@
             </div>
           </div>
         </div>
-        <div class="border-solid border-4 mb-10 md:mb-24 w-3/4 md:w-1/2">
+        <div class="border-solid border-4 mb-10 md:mb-24 w-3/4">
           <h2 class="h2-documents text-center-margin mt-2">Dokumentácie</h2>
           <div class="flex justify-between px-5">
             <div id="documents" class="content-documents"></div>
