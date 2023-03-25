@@ -16,7 +16,7 @@ html {
 
 @layer utilities {
   .h1-sections {
-    @apply font-extrabold text-6xl text-center leading-[7rem];
+    @apply font-extrabold text-5xl text-center leading-[6rem] md:text-6xl md:leading-[7rem];
   }
 
   .h2-profiles-6xl-bold {
@@ -40,7 +40,7 @@ html {
   }
 
   .img-profiles {
-    @apply border-4 w-32 md:w-auto border-solid border-blue rounded-3xl;
+    @apply border-4 w-24 md:w-48 border-solid border-blue rounded-3xl;
   }
 
   .img-save {
@@ -52,7 +52,7 @@ html {
   }
 
   .text-profiles {
-    @apply text-[1.3rem] text-center min-w-[3rem];
+    @apply text-[1.1rem] text-center md:text-[1.3rem] md:min-w-[3rem];
   }
 
   .text-profiles-name {
@@ -68,7 +68,7 @@ html {
   }
 
   .p-body {
-    @apply text-center-margin font-medium text-[1.5rem];
+    @apply text-center-margin font-medium text-[1.5rem] px-4;
   }
 
   .p-footer {
