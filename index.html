@@ -327,7 +327,9 @@
               <div class="semesterRecords hidden" semester="first">
                 <% for(const record of records.first) {%>
                 <span class="flex justify-center pt-5 md:pt-2">
-                  <p class="text-blue font-roboto text-2xl font-bold w-[170px]">
+                  <p
+                    class="text-blue font-roboto text-xl sm:text-2xl font-bold w-[170px]"
+                  >
                     <%= record.name %>
                   </p>
                   <a href="<%= record.src %>" target="_blank" rel="noreferrer">
@@ -356,7 +358,9 @@
               <div class="semesterRecords hidden" semester="second">
                 <% for(const record of records.second) {%>
                 <span class="flex justify-center pt-5 md:pt-2">
-                  <p class="text-blue font-roboto text-2xl font-bold w-[170px]">
+                  <p
+                    class="text-blue font-roboto text-xl sm:text-2xl font-bold w-[170px]"
+                  >
                     <%= record.name %>
                   </p>
                   <a href="<%= record.src %>" target="_blank" rel="noreferrer">
