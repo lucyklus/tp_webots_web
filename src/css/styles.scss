@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 html {
-  @apply text-blue;
-  @apply font-roboto;
+  @apply bg-darkBlue;
   @apply scroll-pt-20;
   min-width: 100%;
 }
@@ -16,6 +15,10 @@ html {
 }
 
 @layer utilities {
+  .nav-a {
+    @apply font-raleway font-semibold text-lg text-white;
+  }
+
   .h1-sections {
     @apply font-extrabold text-5xl text-center leading-[6rem] md:text-6xl md:leading-[7rem];
   }

@@ -6,17 +6,22 @@ module.exports = {
     './src/**/*.js',
   ],
   theme: {
-    fontFamily: {
-      roboto: ['"Roboto"', 'sans-serif', ...defaultTheme.fontFamily.sans],
-    },
+    
     colors: {
       blue: '#1b1a44',
-      turquoise: '#67d8d6cc',
+      white: '#ffffff',
+      darkBlue: '#021727',
+      turquoise: '#42FFFF',
+      lightgreen: '#6cff93d2',
       purple: '#861670',
       mauve: '#D2CDF4',
       grey: '#e3e2e7',
     },
     extend: {
+      fontFamily: {
+        roboto: ['"Roboto"', 'sans-serif', ...defaultTheme.fontFamily.sans],
+        raleway: ['"Raleway"', 'sans-serif', ...defaultTheme.fontFamily.sans],
+      },
     },
   },
   plugins: [],
