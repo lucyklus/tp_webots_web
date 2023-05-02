@@ -13,6 +13,7 @@ module.exports = {
       darkBlue: '#021727',
       turquoise: '#42FFFF',
       lightgreen: '#6cff93d2',
+      webotsGreen: '#02FC74',
       purple: '#861670',
       mauve: '#D2CDF4',
       grey: '#e3e2e7',
