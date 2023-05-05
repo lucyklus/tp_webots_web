@@ -6,12 +6,13 @@ html {
   @apply bg-darkBlue;
   @apply scroll-pt-20;
   @apply overflow-x-hidden;
+  @apply text-white;
   min-width: 100%;
 }
 
 @layer components {
   .wrapper {
-    @apply mx-auto px-10 w-full;
+    @apply mx-auto px-10 w-full max-w-[1600px];
   }
 }
 
