@@ -56,7 +56,7 @@ html {
   }
 
   .img-profiles {
-    @apply border-4 w-20 sm:w-36 md:w-20 lg:w-40 border-solid border-blue rounded-3xl;
+    @apply border-4 w-20 sm:w-36 md:w-20 lg:w-40 border-solid border-webotsGreen rounded-3xl;
   }
 
   .img-save {
@@ -72,11 +72,11 @@ html {
   }
 
   .text-profiles-name {
-    @apply text-profiles border-solid border-b-4 sm:text-2xl;
+    @apply text-profiles text-grey border-solid border-b-4 sm:text-2xl;
   }
 
   .text-profiles-role {
-    @apply text-profiles text-purple font-medium leading-tight sm:text-2xl md:text-xl;
+    @apply text-profiles text-webotsGreen font-medium leading-tight sm:text-2xl md:text-xl;
   }
 
   .content-documents {
