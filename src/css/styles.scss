@@ -21,6 +21,14 @@ html {
     @apply font-raleway font-semibold text-lg text-white;
   }
 
+  .nav-a-active {
+    @apply text-webotsGreen;
+  }
+
+  .nav-scrolled {
+    @apply bg-darkBlue bg-opacity-75;
+  }
+
   .h1-sections {
     @apply font-extrabold text-5xl text-center leading-[6rem] md:text-6xl md:leading-[7rem];
   }

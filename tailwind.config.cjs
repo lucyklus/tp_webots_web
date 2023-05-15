@@ -6,9 +6,9 @@ module.exports = {
     './src/**/*.js',
   ],
   theme: {
-    
     colors: {
       blue: '#1b1a44',
+      orange: '#fe824e',
       white: '#ffffff',
       darkBlue: '#021727',
       turquoise: '#42FFFF',
