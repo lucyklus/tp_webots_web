@@ -7,8 +7,8 @@ function onSemesterClick(event) {
   const semesterArrow = semesterWrapper.querySelector('.semesterArrow');
 
   semesterRecords.classList.toggle('hidden');
-  semesterTitle.classList.toggle('text-purple');
-  semesterArrow.classList.toggle('icon-purple');
+  semesterTitle.classList.toggle('text-webotsGreen');
+  semesterArrow.classList.toggle('icon-webotsGreen');
   semesterArrow.classList.toggle('rotate-180');
 }
 document.getElementById('firstSemesterWrapper').addEventListener('click', onSemesterClick);

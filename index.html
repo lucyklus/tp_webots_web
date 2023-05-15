@@ -330,10 +330,12 @@
         src="/src/images/poster.svg"
       />
     </div>
-    <div id="dokumenty" class="bg-mauve">
-      <div class="wrapper flex flex-col items-center">
-        <h1 class="h1-sections text-webotsGreen py-10">DOKUMENTY</h1>
-        <div class="border-solid border-4 pb-5 mb-10 md:mb-24 w-3/4">
+    <div id="dokumenty" class="wrapper">
+      <h1 class="h1-sections">// DOKUMENTY</h1>
+      <div class="flex flex-col items-center">
+        <div
+          class="border-solid border-4 border-webotsGreen pb-5 mb-10 md:mb-24 w-3/4"
+        >
           <h2 class="h2-documents text-center-margin mt-2">Zápisnice</h2>
           <div class="grid md:grid-cols-2">
             <div class="flex flex-col">
@@ -351,9 +353,7 @@
               <div class="semesterRecords hidden" semester="first">
                 <% for(const record of records.first) {%>
                 <span class="flex justify-center pt-5 md:pt-2">
-                  <p
-                    class="text-blue font-roboto text-xl sm:text-2xl font-bold w-[170px]"
-                  >
+                  <p class="text-grey text-xl sm:text-2xl w-[170px]">
                     <%= record.name %>
                   </p>
                   <a href="<%= record.src %>" target="_blank" rel="noreferrer">
@@ -382,9 +382,7 @@
               <div class="semesterRecords hidden" semester="second">
                 <% for(const record of records.second) {%>
                 <span class="flex justify-center pt-5 md:pt-2">
-                  <p
-                    class="text-blue font-roboto text-xl sm:text-2xl font-bold w-[170px]"
-                  >
+                  <p class="text-grey text-xl sm:text-2xl w-[170px]">
                     <%= record.name %>
                   </p>
                   <a href="<%= record.src %>" target="_blank" rel="noreferrer">
@@ -400,7 +398,9 @@
             </div>
           </div>
         </div>
-        <div class="border-solid border-4 mb-10 md:mb-24 w-3/4">
+        <div
+          class="border-solid border-4 border-webotsGreen mb-10 md:mb-24 w-3/4"
+        >
           <h2 class="h2-documents text-center-margin mt-2">Dokumentácie</h2>
           <div class="flex justify-between px-5">
             <div id="documents" class="content-documents"></div>
