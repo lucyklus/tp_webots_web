@@ -23,7 +23,10 @@ module.exports = {
         roboto: ['"Roboto"', 'sans-serif', ...defaultTheme.fontFamily.sans],
         raleway: ['"Raleway"', 'sans-serif', ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: {
+          'poster': "url('/src/images/poster.svg')",
+      },
     },
-  },
-  plugins: [],
+    plugins: [],
+  }
 };
