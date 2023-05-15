@@ -111,9 +111,7 @@
         class="w-[480px] mx-auto mt-20 md:absolute md:-top-10 md:-right-36 md:w-2/3 -z-10"
       />
       <div class="mt-10 md:mt-[18rem] mb-10">
-        <h1
-          class="text-white text-center leading-[4.5rem] text-4xl font-black mt-5 sm:mt-10 sm:text-7xl sm:leading-[6rem] md:mt-20 md:text-7xl md:leading-[6rem] lg:text-[5rem] lg:leading-[6rem] lg:text-left"
-        >
+        <h1 class="h1-sections">
           UMELÁ INTELIGENCIA<br />V SIMULÁTORE <br />
           <span class="bg-webotsGreen text-darkBlue"> WEBOTS </span>
         </h1>
@@ -132,73 +130,71 @@
       </div>
     </div>
     <div id="projekt" class="wrapper">
-      <div class="mb-20 md:m-16 lg:m-24 border-[5px] border-solid border-blue">
-        <h1 class="h1-sections">PROJEKT</h1>
-        <div class="py-5">
-          <p class="p-body">
-            Cieľom projektu je
-            <span class="text-purple">
-              preskúmať možnosti využívania prvkov umelej inteligencie
-            </span>
-            v prostredí <br />
-            na simuláciu robotov
-            <span class="text-purple">Webots</span>.
-          </p>
-          <p class="p-body">
-            Zameriame sa na
-            <span class="text-purple">vytvorenie</span> vlastného
-            <span class="text-purple">inteligentného robota </span> a
-            <span class="text-purple">simulačného prostredia</span>, v
-            <br />
-            ktorom bude tento robot vykonávať rôzne definované úlohy. Inými
-            slovami,
-            <br />
-            naprogramujeme
-            <span class="text-purple">vlastnú riadiacu jednotku</span>, ktorá sa
-            naučí komunikovať s prostredím.
-          </p>
-          <p class="p-body">
-            Riešenie navrhneme, odsimulujeme a otestujeme v prostredí Webots,
-            pričom riadiacu <br />
-            jednotku naprogramujeme v
-            <span class="text-purple">Pythone</span>.
-          </p>
-          <p class="p-body">
-            Pre učenie použijeme
-            <span class="text-purple">reinforcement learning</span>, vďaka
-            ktorému náš robot bude vedieť hrať <br />
-            futbal a rozpoznávať spoluhráčov. Nakoniec týmto štýlom vytvoríme
-            <span class="text-purple"
-              >inteligentné <br />
-              futbalové tímy</span
-            >, schopné súperiť o góly.
-          </p>
-        </div>
-      </div>
-      <div class="bg-grey">
-        <div
-          class="wrapper flex flex-col items-center md:flex-row justify-evenly p-20 gap-10"
-        >
-          <img
-            alt="Mapa 1"
-            class="img-gallery"
-            src="/src/images/maps/map1.png"
-          />
-          <img
-            alt="Mapa 2"
-            class="img-gallery"
-            src="/src/images/maps/map2.png"
-          />
-          <img
-            alt="Mapa 3"
-            class="img-gallery"
-            src="/src/images/maps/map3.png"
-          />
-          <img
-            alt="Mapa 4"
-            class="img-gallery"
-            src="/src/images/maps/map4.png"
-          />
+      <div class="mb-20">
+        <h1 class="h1-sections">// PROJEKT</h1>
+        <div class="grid md:grid-cols-2 md:gap-20">
+          <div class="flex items-center">
+            <img
+              alt="Mapa 1"
+              class="img-gallery"
+              src="/src/images/maps/map1.png"
+            />
+            <p class="p-body text-justify w-1/2">
+              Cieľom projektu je
+              <span class="text-webotsGreen">
+                preskúmať možnosti využívania prvkov umelej inteligencie
+              </span>
+              v prostredí na simuláciu robotov
+              <span class="text-webotsGreen">Webots</span>.
+            </p>
+          </div>
+
+          <div class="flex">
+            <img
+              alt="Mapa 2"
+              class="img-gallery"
+              src="/src/images/maps/map2.png"
+            />
+            <p class="p-body text-justify w-1/2">
+              Riešenie navrhneme, odsimulujeme a otestujeme v prostredí Webots,
+              pričom riadiacu jednotku naprogramujeme v
+              <span class="text-webotsGreen">Pythone</span>.
+            </p>
+          </div>
+
+          <div class="flex">
+            <p class="p-body text-justify w-1/2">
+              Zameriame sa na
+              <span class="text-webotsGreen">vytvorenie</span> vlastného
+              <span class="text-webotsGreen">inteligentného robota </span> a
+              <span class="text-webotsGreen">simulačného prostredia</span>, v
+              ktorom bude tento robot vykonávať rôzne definované úlohy. Inými
+              slovami, naprogramujeme
+              <span class="text-webotsGreen">vlastnú riadiacu jednotku</span>,
+              ktorá sa naučí komunikovať s prostredím.
+            </p>
+            <img
+              alt="Mapa 3"
+              class="img-gallery"
+              src="/src/images/maps/map3.png"
+            />
+          </div>
+
+          <div class="flex items-center">
+            <p class="p-body text-justify w-1/2">
+              Pre učenie použijeme
+              <span class="text-webotsGreen">reinforcement learning</span>,
+              vďaka ktorému náš robot bude vedieť hrať futbal a rozpoznávať
+              spoluhráčov. Nakoniec týmto štýlom vytvoríme
+              <span class="text-webotsGreen">inteligentné futbalové tímy</span>,
+              schopné súperiť o góly.
+            </p>
+            <img
+              alt="Mapa 4"
+              class="img-gallery"
+              src="/src/images/maps/map4.png"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -207,7 +203,7 @@
         <h1 class="mt-24 mb-3 pt-20 md:mb-5 text-center">
           <span class="text-4xl sm:text-6xl"> Zoznámte sa s </span>
           <br />
-          <span class="h1-sections text-purple">TÍMOM</span>
+          <span class="h1-sections text-webotsGreen">TÍMOM</span>
         </h1>
         <h2 class="text-center">
           <span class="text-3xl font-bold sm:text-6xl">
@@ -338,10 +334,10 @@
       </div>
     </div>
     <div id="simulacia" class="wrapper flex flex-col items-center pb-24">
-      <h1 class="h1-sections text-purple mb-5">SIMULÁCIA</h1>
+      <h1 class="h1-sections text-webotsGreen mb-5">SIMULÁCIA</h1>
       <p class="p-body">
         Chceš si kopnúť? Klikni
-        <a href="/simulacia" class="text-purple">TU</a>!
+        <a href="/simulacia" class="text-webotsGreen">TU</a>!
         <!-- TODO:  link to simulation -->
       </p>
       <img
@@ -352,7 +348,7 @@
     </div>
     <div id="dokumenty" class="bg-mauve">
       <div class="wrapper flex flex-col items-center">
-        <h1 class="h1-sections text-purple py-10">DOKUMENTY</h1>
+        <h1 class="h1-sections text-webotsGreen py-10">DOKUMENTY</h1>
         <div class="border-solid border-4 pb-5 mb-10 md:mb-24 w-3/4">
           <h2 class="h2-documents text-center-margin mt-2">Zápisnice</h2>
           <div class="grid md:grid-cols-2">
@@ -438,7 +434,7 @@
           </p>
         </div>
         <div class="items-center">
-          <h1 class="font-extrabold text-4xl text-center text-purple">
+          <h1 class="font-extrabold text-4xl text-center text-webotsGreen">
             KONTAKT
           </h1>
           <p class="flex p-footer items-center justify-center">
@@ -460,7 +456,7 @@
         class="wrapper flex flex-col items-center w-full px-10 py-5 md:hidden"
       >
         <div class="items-center">
-          <h1 class="font-extrabold text-4xl text-center text-purple mb-2">
+          <h1 class="font-extrabold text-4xl text-center text-webotsGreen mb-2">
             KONTAKT
           </h1>
         </div>
