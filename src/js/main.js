@@ -11,9 +11,10 @@ function onSemesterClick(event) {
   semesterArrow.classList.toggle('icon-purple');
   semesterArrow.classList.toggle('rotate-180');
 }
+document.getElementById('firstSemesterWrapper').addEventListener('click', onSemesterClick);
+document.getElementById('secondSemesterWrapper').addEventListener('click', onSemesterClick);
 
-function activeNav() { 
-  console.log(window.scrollY);
+window.onload = () => { // highlight active section in navbar
   const sections = [
     document.getElementById('domov'),
     document.getElementById('projekt'),
@@ -21,28 +22,22 @@ function activeNav() {
     document.getElementById('simulacia'),
     document.getElementById('dokumenty'),
   ];
-
-  sections.forEach(current => {
-    const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 400;
-    console.log(current)
-    console.log(sectionHeight)
-    console.log(sectionTop)
-    let sectionId = current.getAttribute("id");
-
-    if (window.scrollY > sectionTop && window.scrollY <= sectionTop + sectionHeight) {
-      document.getElementById("nav-" + sectionId).classList.add("nav-a-active");
-    } else {
-      document.getElementById("nav-" + sectionId).classList.remove("nav-a-active");
-    }
+  
+  const observer = new IntersectionObserver((entries) => {
+    for(const entry of entries)
+      if(entry.isIntersecting) {
+        var active = document.querySelector(".nav-a-active");
+        if(active != null) active.classList.remove("nav-a-active");
+        document.getElementById("nav-" + entry.target.id).classList.add("nav-a-active");
+      }
+    },{
+    rootMargin: "-50% 0px"
   });
-}
+  for (let i = 0; i < sections.length; i++)
+   observer.observe(sections[i]);
+};
 
-document.getElementById('firstSemesterWrapper').addEventListener('click', onSemesterClick);
-document.getElementById('secondSemesterWrapper').addEventListener('click', onSemesterClick);
-document.addEventListener('scroll', activeNav);
-
-window.onscroll = function () {
+window.onscroll = function () { // Add nav bckg on scroll
   let isScrolled = false
   const scrollPoint = 100
   const nav = document.getElementById('navbar')
