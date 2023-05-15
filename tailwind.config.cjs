@@ -16,7 +16,7 @@ module.exports = {
       webotsGreen: '#02FC74',
       purple: '#861670',
       mauve: '#D2CDF4',
-      grey: '#e3e2e7',
+      grey: '#CBCBCB',
     },
     extend: {
       fontFamily: {
