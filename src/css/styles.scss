@@ -12,6 +12,18 @@ body {
   padding: 0;
 }
 
+@keyframes rainbowanim {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
 @layer components {
   .wrapper {
     @apply mx-auto px-10 w-full max-w-[1600px];
@@ -100,6 +112,7 @@ body {
     filter: invert(11%) sepia(57%) saturate(5198%) hue-rotate(299deg)
       brightness(101%) contrast(92%);
   }
+
   .menu-wrapper {
     .menu {
       display: none;
@@ -109,5 +122,39 @@ body {
         display: flex;
       }
     }
+  }
+
+  .border-rainbow {
+    @apply relative;
+  }
+
+  .border-rainbow:before,
+  .border-rainbow:after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(
+      60deg,
+      #fb0094,
+      #0000ff,
+      #00ff00,
+      #ffff00,
+      #ff0000,
+      #fb0094,
+      #0000ff,
+      #00ff00,
+      #ffff00,
+      #ff0000
+    );
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    border-radius: inherit;
+    animation: rainbowanim 20s linear infinite;
+  }
+  .border-rainbow:after {
+    filter: blur(20px);
   }
 }
