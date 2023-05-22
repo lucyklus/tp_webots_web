@@ -7,15 +7,9 @@ module.exports = {
   ],
   theme: {
     colors: {
-      blue: '#1b1a44',
-      orange: '#fe824e',
       white: '#ffffff',
       darkBlue: '#021727',
-      turquoise: '#42FFFF',
-      lightgreen: '#6cff93d2',
       webotsGreen: '#02FC74',
-      purple: '#861670',
-      mauve: '#D2CDF4',
       grey: '#CBCBCB',
     },
     extend: {
@@ -24,7 +18,7 @@ module.exports = {
         raleway: ['"Raleway"', 'sans-serif', ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
-          'poster': "url('/src/images/poster.svg')",
+        'gradient-radial': 'radial-gradient(50% 50% at 50% 50%, rgba(2, 252, 116, 1) 0%, rgba(9, 58, 61, 1) 72.92%, rgba(2, 23, 39, 0.2) 100%)',
       },
     },
     plugins: [],
