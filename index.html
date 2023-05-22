@@ -18,7 +18,7 @@
   </head>
   <body>
     <div id="navbar" class="fixed w-full top-0 left-0 right-0 h-16 z-10">
-      <nav class="wrapper flex items-center justify-between py-3">
+      <nav class="px-3 flex items-center justify-between py-3">
         <span
           class="text-white text-xl flex gap-1.5 items-center w-12 h-12 font-normal"
         >
@@ -104,16 +104,22 @@
         </span>
       </nav>
     </div>
-    <div id="domov" class="wrapper">
+    <div class="absolute top-0 w-[100%] h-[300%] overflow-hidden">
+      <div
+        class="absolute -translate-x-[50%] left-[50%] aspect-square w-[600px] bg-blend-lighten bg-gradient-radial -z-10 lg:translate-x-0 lg:w-[1500px] lg:-top-[600px] lg:-right-[600px]"
+      ></div>
       <img
         alt="Hráč"
-        src="/src/images/player.svg"
-        class="mx-auto mt-20 lg:absolute lg:-top-10 lg:-right-36 lg:w-2/3 -z-10"
+        src="/src/images/player.png"
+        class="absolute top-[90px] w-[600px] min-w-[600px] -translate-x-[50%] left-[50%] -z-10 lg:translate-x-0 lg:left-auto lg:w-[1100px] lg:pt-0 lg:top-0 lg:-right-[150px]"
       />
+    </div>
+
+    <div id="domov" class="wrapper mt-[600px] lg:mt-0">
       <div class="mt-10 lg:mt-[18rem] mb-10">
         <h1 class="h1-sections">
           UMELÁ INTELIGENCIA<br />V SIMULÁTORE <br />
-          <span class="bg-webotsGreen text-darkBlue"> WEBOTS </span>
+          <span class="bg-webotsGreen text-darkBlue px-2"> WEBOTS </span>
         </h1>
       </div>
       <div class="grid md:grid-cols-2 md:mt-40">
