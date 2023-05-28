@@ -26,6 +26,7 @@ body {
 @layer components {
   .wrapper {
     @apply mx-auto px-10 w-full;
+    max-width: 1600px;
   }
 }
 
@@ -43,7 +44,7 @@ body {
   }
 
   .h1-sections {
-    @apply text-white text-center leading-[4.5rem] text-4xl font-black mt-5 sm:mt-10 sm:text-7xl 
+    @apply text-white text-center leading-normal text-4xl font-black mt-5 sm:mt-10 sm:text-7xl
       sm:leading-[6rem] lg:text-start md:mt-20 md:mb-10 md:text-7xl md:leading-[6rem] lg:text-[5rem] lg:leading-[6rem];
   }
 
@@ -80,11 +81,11 @@ body {
   }
 
   .text-profiles-name {
-    @apply text-profiles text-grey border-solid border-b-4 sm:text-2xl;
+    @apply text-profiles text-webotsGreen border-solid border-b-4 sm:text-2xl;
   }
 
   .text-profiles-role {
-    @apply text-profiles text-webotsGreen font-medium leading-tight sm:text-2xl md:text-xl;
+    @apply text-profiles text-grey font-medium leading-tight sm:text-2xl md:text-xl;
   }
 
   .content-documents {

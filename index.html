@@ -115,9 +115,9 @@
       />
     </div>
 
-    <div id="domov" class="wrapper mt-[600px] lg:mt-0">
+    <div id="domov" class="wrapper mt-[500px] lg:mt-0">
       <div class="mt-10 lg:mt-[18rem] mb-10">
-        <h1 class="h1-sections">
+        <h1 class="h1-sections !leading-2">
           UMELÁ INTELIGENCIA<br />V SIMULÁTORE <br />
           <span class="bg-webotsGreen text-darkBlue px-2"> WEBOTS </span>
         </h1>
@@ -213,11 +213,13 @@
       </h2>
       <p class="pt-5 text-lg text-grey text-center md:text-xl">
         Viac sa o náš môžeš dozvedieť vo videu
-        <span
+        <a
           class="text-webotsGreen underline cursor-pointer"
-          onclick="window.open('https://www.youtube.com/watch?v=wFrOm8Hf-J4&ab_channel=FIITSTU', '_blank')"
-          >TU</span
-        >
+          href="https://www.youtube.com/watch?v=wFrOm8Hf-J4&ab_channel=FIITSTU"
+          target="_blank"
+          noreferer
+          noopener
+        >TU</a>
       </p>
       <div class="grid md:grid-cols-2 md:mt-10 md:mb-10">
         <div class="items-start flex flex-col gap-10 pt-8">
@@ -359,13 +361,14 @@
         >
         alebo na plagát nižšie! 👀
       </p>
-      <div class="border-rainbow w-3/4 display-block ml-auto mr-auto">
-        <img
-          alt="Simulácia"
-          class="object-cover w-full cursor-pointer"
-          src="/src/images/poster.svg"
-          onclick="window.location.href='/simulacia'"
-        />
+      <div class="border-rainbow w-3/4 max-w-[600px] display-block ml-auto mr-auto">
+        <a href="/simulacia">
+          <img
+            alt="Simulácia"
+            class="object-cover w-full cursor-pointer"
+            src="/src/images/poster.svg"
+          />
+        </a>
       </div>
     </div>
     <div id="dokumenty" class="wrapper">
@@ -394,13 +397,7 @@
                   <p class="text-grey text-xl sm:text-2xl w-[170px]">
                     <%= record.name %>
                   </p>
-                  <a href="<%= record.src %>" target="_blank" rel="noreferrer">
-                    <img
-                      alt="Stiahnuť"
-                      class="img-save"
-                      src="/src/images/save.png"
-                    />
-                  </a>
+                  <a href="<%= record.src %>" target="_blank" rel="noreferrer">⬇️</a>
                 </span>
                 <% } %>
               </div>
@@ -423,13 +420,7 @@
                   <p class="text-grey text-xl sm:text-2xl w-[170px]">
                     <%= record.name %>
                   </p>
-                  <a href="<%= record.src %>" target="_blank" rel="noreferrer">
-                    <img
-                      alt="Stiahnuť"
-                      class="img-save"
-                      src="/src/images/save.png"
-                    />
-                  </a>
+                  <a href="<%= record.src %>" target="_blank" rel="noreferrer">⬇️</a>
                 </span>
                 <% } %>
               </div>
