@@ -11,309 +11,372 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&family=Roboto&display=swap"
       rel="stylesheet"
     />
     <title>Slniečka</title>
   </head>
   <body>
-    <div class="bg-turquoise fixed w-full top-0 left-0 right-0 h-16">
-      <nav class="wrapper flex items-center justify-between py-3">
-        <span class="flex gap-1.5 items-center w-12 h-12 font-normal text-3xl">
+    <div id="navbar" class="fixed w-full top-0 left-0 right-0 h-16 z-10">
+      <nav class="px-3 flex items-center justify-between py-3">
+        <span
+          class="text-white text-xl flex gap-1.5 items-center w-12 h-12 font-normal"
+        >
           <img alt="Slniečka" src="/icons/icon.svg" />
           Slniečka
         </span>
         <ul class="hidden lg:block">
           <li class="mr-10 inline">
-            <a class="font-medium text-2xl" href="#domov">Domov</a>
+            <a id="nav-domov" class="nav-a hover:text-webotsGreen" href="#domov"
+              >Domov</a
+            >
           </li>
           <li class="mr-10 inline">
-            <a class="font-medium text-2xl" href="#projekt">Projekt</a>
+            <a
+              id="nav-projekt"
+              class="nav-a hover:text-webotsGreen"
+              href="#projekt"
+              >Projekt</a
+            >
           </li>
           <li class="mr-10 inline">
-            <a class="font-medium text-2xl" href="#tim">Tím</a>
+            <a id="nav-tim" class="nav-a hover:text-webotsGreen" href="#tim"
+              >Tím</a
+            >
           </li>
           <li class="mr-10 inline">
-            <a class="font-medium text-2xl" href="#simulacia">Simulácia</a>
+            <a
+              id="nav-simulacia"
+              class="nav-a hover:text-webotsGreen"
+              href="#simulacia"
+              >Simulácia</a
+            >
           </li>
           <li class="mr-10 inline">
-            <a class="font-medium text-2xl" href="#dokumenty">Dokumenty</a>
+            <a
+              id="nav-dokumenty"
+              class="nav-a hover:text-webotsGreen"
+              href="#dokumenty"
+              >Dokumenty</a
+            >
           </li>
           <li class="mr-10 inline">
-            <a class="font-medium text-2xl" href="#kontakt">Kontakt</a>
+            <a
+              id="nav-kontakt"
+              class="nav-a hover:text-webotsGreen"
+              href="#kontakt"
+              >Kontakt</a
+            >
           </li>
         </ul>
-        <span class="menu-wrapper lg:hidden">
-          <img class="w-10 h-10" alt="Menu" src="/src/images/menu.svg" />
+        <span class="menu-wrapper">
+          <img
+            class="w-10 h-10 lg:hidden"
+            alt="Menu"
+            src="/src/images/menu.svg"
+          />
           <input
             type="checkbox"
-            class="absolute w-10 h-10 block top-3 z-2 opacity-0"
+            class="absolute w-10 h-10 block top-3 z-30 opacity-0 lg:hidden"
           />
           <ul
-            class="menu absolute right-0 top-16 w-full flex-col items-center bg-turquoise pb-4"
+            class="menu absolute right-0 top-16 w-full flex-col items-center bg-darkBlue bg-opacity-75 pb-4"
           >
             <li class="border-b-2">
-              <a class="font-medium text-2xl" href="#domov">Domov</a>
+              <a class="nav-a" href="#domov">Domov</a>
             </li>
             <li class="mt-10 border-b-2">
-              <a class="font-medium text-2xl" href="#projekt">Projekt</a>
+              <a class="nav-a" href="#projekt">Projekt</a>
             </li>
             <li class="mt-10 border-b-2">
-              <a class="font-medium text-2xl" href="#tim">Tím</a>
+              <a class="nav-a" href="#tim">Tím</a>
             </li>
             <li class="mt-10 border-b-2">
-              <a class="font-medium text-2xl" href="#simulacia">Simulácia</a>
+              <a class="nav-a" href="#simulacia">Simulácia</a>
             </li>
             <li class="mt-10 border-b-2">
-              <a class="font-medium text-2xl" href="#dokumenty">Dokumenty</a>
+              <a class="nav-a" href="#dokumenty">Dokumenty</a>
             </li>
             <li class="mt-10 border-b-2">
-              <a class="font-medium text-2xl" href="#kontakt">Kontakt</a>
+              <a class="nav-a" href="#kontakt">Kontakt</a>
             </li>
           </ul>
         </span>
       </nav>
     </div>
-    <div class="wrapper">
-      <div id="domov" class="grid lg:grid-cols-2 mt-20 mb-10">
-        <div class="flex justify-center">
-          <h1
-            class="text-center leading-[4.5rem] font-extrabold text-5xl mt-5 sm:mt-10 sm:text-7xl sm:leading-[6rem] md:mt-20 md:text-7xl md:leading-[6rem] lg:text-8xl lg:leading-[7.5rem] lg:text-right"
-          >
-            Umelá <br />inteligencia v <br />simulátore<br />
-            Webots
-          </h1>
-        </div>
-        <div class="flex flex-col justify-center">
-          <img
-            alt="Hráč"
-            src="/src/images/player.png"
-            class="mt-20 self-center mb-5 w-72 sm:w-[400px] md:w-[500px]"
-          />
-          <p class="text-center-margin p-body leading-9">
-            Pri spojení pojmov robotika a <br />umelá inteligencia (AI) sa nám
-            <br />zväčša vynorí predstava o <br />humanoidných robotoch z
-            <br />nejedného filmu.
-          </p>
-          <p class="text-center-margin font-medium text-xl leading-8">
-            Ak však odhliadneme od <br />Hollywoodu, AI a robotika
-            <br />predstavujú dve odlišné <br />disciplíny, avšak môžu byť
-            <br />navzájom prospešné a môžu <br />
-            koexistovať.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="wrapper">
+    <div class="absolute top-0 w-[100%] h-[1200px] overflow-hidden">
       <div
-        id="projekt"
-        class="mb-20 md:m-16 lg:m-24 border-[5px] border-solid border-blue"
-      >
-        <h1 class="h1-sections">PROJEKT</h1>
-        <div class="py-5">
-          <p class="p-body">
-            Cieľom projektu je
-            <span class="text-purple">
-              preskúmať možnosti využívania prvkov umelej inteligencie
-            </span>
-            v prostredí <br />
-            na simuláciu robotov
-            <span class="text-purple">Webots</span>.
-          </p>
-          <p class="p-body">
-            Zameriame sa na
-            <span class="text-purple">vytvorenie</span> vlastného
-            <span class="text-purple">inteligentného robota </span> a
-            <span class="text-purple">simulačného prostredia</span>, v
-            <br />
-            ktorom bude tento robot vykonávať rôzne definované úlohy. Inými
-            slovami,
-            <br />
-            naprogramujeme
-            <span class="text-purple">vlastnú riadiacu jednotku</span>, ktorá sa
-            naučí komunikovať s prostredím.
-          </p>
-          <p class="p-body">
-            Riešenie navrhneme, odsimulujeme a otestujeme v prostredí Webots,
-            pričom riadiacu <br />
-            jednotku naprogramujeme v
-            <span class="text-purple">Pythone</span>.
-          </p>
-          <p class="p-body">
-            Pre učenie použijeme
-            <span class="text-purple">reinforcement learning</span>, vďaka
-            ktorému náš robot bude vedieť hrať <br />
-            futbal a rozpoznávať spoluhráčov. Nakoniec týmto štýlom vytvoríme
-            <span class="text-purple"
-              >inteligentné <br />
-              futbalové tímy</span
-            >, schopné súperiť o góly.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="bg-grey">
-      <div
-        class="wrapper flex flex-col items-center md:flex-row justify-evenly p-20 gap-10"
-      >
-        <img alt="Mapa 1" class="img-gallery" src="/src/images/maps/map1.png" />
-        <img alt="Mapa 2" class="img-gallery" src="/src/images/maps/map2.png" />
-        <img alt="Mapa 3" class="img-gallery" src="/src/images/maps/map3.png" />
-        <img alt="Mapa 4" class="img-gallery" src="/src/images/maps/map4.png" />
-      </div>
-    </div>
-    <div class="bg-grey">
-      <div id="tim" class="wrapper px-5">
-        <h1 class="mt-24 mb-3 pt-20 md:mb-5 text-center">
-          <span class="text-4xl sm:text-6xl"> Zoznámte sa s </span>
-          <br />
-          <span class="h1-sections text-purple">TÍMOM</span>
-        </h1>
-        <h2 class="text-center">
-          <span class="text-3xl font-bold sm:text-6xl">
-            71,<span class="text-xl font-thin sm:text-4xl">43</span>%<span
-              class="text-xl font-thin sm:text-4xl"
-            >
-              tímu tvoria dievčatá
-            </span>
-            !
-          </span>
-        </h2>
-        <div class="grid md:grid-cols-2 pb-20 md:mt-10 md:mb-10">
-          <div
-            class="items-end flex flex-col gap-10 pt-8 border-solid md:border-r-4"
-          >
-            <span class="flex justify-end items-center">
-              <img
-                alt="Martin"
-                class="img-profiles"
-                src="/src/images/profiles/martin.png"
-              />
-              <span class="flex flex-col items-center">
-                <span
-                  class="text-profiles-name w-[250px] sm:w-[300px] md:w-[280px]"
-                >
-                  Ing. Martin Komák, PhD.
-                </span>
-                <span class="text-profiles-role">Product Owner</span>
-              </span>
-            </span>
-            <span class="flex justify-end items-center">
-              <img
-                alt="Matej"
-                class="img-profiles"
-                src="/src/images/profiles/matej.png"
-              />
-              <span class="flex flex-col items-center">
-                <span class="text-profiles-name w-[180px] sm:w-[200px]"
-                  >Bc. Matej B.</span
-                >
-                <span class="text-profiles-role">DevOps</span>
-              </span>
-            </span>
-            <span class="flex justify-end items-center">
-              <img
-                alt="Lucia"
-                class="img-profiles"
-                src="/src/images/profiles/lucia.png"
-              />
-              <span class="flex flex-col items-center">
-                <span
-                  class="text-profiles-name w-[250px] sm:w-[300px] md:w-[280px]"
-                  >Bc. Lucia M.</span
-                >
-                <span class="text-profiles-role">Web Dev</span>
-              </span>
-            </span>
-            <span class="flex justify-end items-center">
-              <img
-                alt="Silvia"
-                class="img-profiles"
-                src="/src/images/profiles/silvia.png"
-              />
-              <span class="flex flex-col items-center">
-                <span class="text-profiles-name w-[180px] sm:w-[200px]"
-                  >Bc. Silvia Š.</span
-                >
-                <span class="text-profiles-role">Documentarist</span>
-              </span>
-            </span>
-          </div>
-          <div class="items-start flex flex-col gap-10 pt-10 md:pt-24">
-            <span class="flex justify-start items-center">
-              <span class="flex flex-col items-center">
-                <span
-                  class="text-profiles-name w-[250px] sm:w-[300px] md:w-[280px]"
-                  >Bc. Katarína B.</span
-                >
-                <span class="text-profiles-role">ML Engineer</span>
-              </span>
-              <img
-                alt="Katarina"
-                class="img-profiles"
-                src="/src/images/profiles/katarina.png"
-              />
-            </span>
-            <span class="flex justify-start items-center">
-              <span class="flex flex-col items-center">
-                <span class="text-profiles-name w-[200px]">Bc. Andrei Ch.</span>
-                <span class="text-profiles-role">
-                  Domain Knowledge <br />
-                  Expert
-                </span>
-              </span>
-              <img
-                alt="Andrei"
-                class="img-profiles"
-                src="/src/images/profiles/andrei.png"
-              />
-            </span>
-            <span class="flex justify-start items-center">
-              <span class="flex flex-col items-center">
-                <span
-                  class="text-profiles-name w-[250px] sm:w-[300px] md:w-[280px]"
-                  >Bc. Michaela H.</span
-                >
-                <span class="text-profiles-role">ML Engineer</span>
-              </span>
-              <img
-                alt="Michaela"
-                class="img-profiles"
-                src="/src/images/profiles/michaela.png"
-              />
-            </span>
-            <span class="flex justify-start items-center">
-              <span class="flex flex-col items-center">
-                <span class="text-profiles-name w-[200px]">Bc. Jana L.</span>
-                <span class="text-profiles-role"> Data Scientist <br /> </span>
-              </span>
-              <img
-                alt="Jana"
-                class="img-profiles"
-                src="/src/images/profiles/jana.png"
-              />
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="simulacia" class="wrapper flex flex-col items-center pb-24">
-      <h1 class="h1-sections text-purple mb-5">SIMULÁCIA</h1>
-      <p class="p-body">
-        Chceš si kopnúť? Klikni
-        <a href="/simulacia" class="text-purple">TU</a>!
-        <!-- TODO:  link to simulation -->
-      </p>
+        class="absolute -translate-x-[50%] left-[50%] aspect-square w-[600px] bg-blend-lighten bg-gradient-radial -z-10 lg:translate-x-0 lg:w-[1500px] lg:-top-[600px] lg:-right-[600px]"
+      ></div>
       <img
-        alt="Simulácia"
-        class="w-3/4 object-cover"
-        src="/src/images/poster.png"
+        alt="Hráč"
+        src="/src/images/player.png"
+        class="absolute top-[90px] w-[600px] min-w-[600px] -translate-x-[50%] left-[50%] -z-10 lg:translate-x-0 lg:left-auto lg:w-[1100px] lg:pt-0 lg:top-0 lg:-right-[150px]"
       />
     </div>
-    <div class="bg-mauve">
-      <div id="dokumenty" class="wrapper flex flex-col items-center">
-        <h1 class="h1-sections text-purple py-10">DOKUMENTY</h1>
-        <div class="border-solid border-4 pb-5 mb-10 md:mb-24 w-3/4">
+
+    <div id="domov" class="wrapper mt-[500px] lg:mt-0">
+      <div class="mt-10 lg:mt-[18rem] mb-10">
+        <h1 class="h1-sections !leading-2">
+          UMELÁ INTELIGENCIA<br />V SIMULÁTORE <br />
+          <span class="bg-webotsGreen text-darkBlue px-2"> WEBOTS </span>
+        </h1>
+      </div>
+      <div class="grid md:grid-cols-2 md:mt-40">
+        <div class="justify-self-center md:justify-self-end">
+          <p class="p-body">
+            Pri spojení pojmov robotika a umelá inteligencia (AI) sa <br />
+            nám zväčša vynorí predstava o humanoidných robotoch <br />
+            z nejedného filmu.
+          </p>
+        </div>
+        <div class="justify-self-center md:justify-self-start">
+          <p class="p-body mt-10 md:mt-32">
+            Ak však odhliadneme od Hollywoodu, <br />
+            AI a robotika predstavujú dve odlišné disciplíny,<br />
+            avšak môžu byť navzájom prospešné a môžu koexistovať.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="projekt" class="wrapper">
+      <h1 class="h1-sections">// PROJEKT</h1>
+      <div class="grid md:grid-cols-2 gap-10 md:gap-20">
+        <div class="flex flex-col md:flex-row items-center">
+          <img
+            alt="Mapa 1"
+            class="img-gallery"
+            src="/src/images/maps/map1.png"
+          />
+          <p class="p-body pt-5 md:w-1/2">
+            Cieľom projektu je
+            <span class="text-webotsGreen">
+              preskúmať možnosti využívania prvkov umelej inteligencie
+            </span>
+            v prostredí na simuláciu robotov
+            <span class="text-webotsGreen">Webots</span>.
+          </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center md:items-start">
+          <img
+            alt="Mapa 2"
+            class="img-gallery"
+            src="/src/images/maps/map2.png"
+          />
+          <p class="p-body pt-5 md:w-1/2">
+            Riešenie sme navrhli, odsimulovali a otestovali v prostredí Webots,
+            pričom riadiacu jednotku sme naprogramovali v
+            <span class="text-webotsGreen">Pythone</span>.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row-reverse items-center md:items-start"
+        >
+          <img
+            alt="Mapa 3"
+            class="img-gallery"
+            src="/src/images/maps/map3.png"
+          />
+          <p class="p-body pt-5 md:w-1/2">
+            Zamerali sme sa na
+            <span class="text-webotsGreen">vytvorenie</span> vlastného
+            <span class="text-webotsGreen">inteligentného robota </span> a
+            <span class="text-webotsGreen">simulačného prostredia</span>, v
+            ktorom robot vykonáva úlohy. Naprogramovali sme
+            <span class="text-webotsGreen">vlastnú riadiacu jednotku</span>,
+            ktorá vie komunikovať s prostredím.
+          </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row-reverse items-center">
+          <img
+            alt="Mapa 4"
+            class="img-gallery"
+            src="/src/images/maps/map4.png"
+          />
+          <p class="p-body pt-5 md:w-1/2">
+            Pre učenie sme použili
+            <span class="text-webotsGreen">reinforcement learning</span>, vďaka
+            ktorému náš robot vie hrať futbal a rozpoznávať protihráčov.
+            Nakoniec sme naše poznatky spracovali tak, aby si každý mohol
+            <span class="text-webotsGreen">natrénovať svoju neurónku.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="tim" class="wrapper">
+      <h1 class="h1-sections">// TÍM</h1>
+      <h2 class="text-xl text-grey text-center md:text-3xl">
+        71,43% tímu tvoria <span class="text-webotsGreen">dievčatá </span> !
+      </h2>
+      <p class="pt-5 text-lg text-grey text-center md:text-xl">
+        Viac sa o náš môžeš dozvedieť vo videu
+        <a
+          class="text-webotsGreen underline cursor-pointer"
+          href="https://www.youtube.com/watch?v=wFrOm8Hf-J4&ab_channel=FIITSTU"
+          target="_blank"
+          noreferer
+          noopener
+        >TU</a>
+      </p>
+      <div class="grid md:grid-cols-2 md:mt-10 md:mb-10">
+        <div class="items-start flex flex-col gap-10 pt-8">
+          <span class="flex justify-end items-center">
+            <span class="flex flex-col items-center">
+              <span
+                class="text-profiles-name w-[250px] sm:w-[300px] md:w-[500px]"
+              >
+                Ing. Martin Komák, PhD.
+              </span>
+              <span class="text-profiles-role">Product Owner</span>
+            </span>
+            <img
+              alt="Martin"
+              class="img-profiles"
+              src="/src/images/profiles/martin.png"
+            />
+          </span>
+          <span class="flex justify-end items-center">
+            <span class="flex flex-col items-center">
+              <span class="text-profiles-name w-[180px] sm:w-[220px]"
+                >Bc. Matej B.</span
+              >
+              <span class="text-profiles-role">DevOps</span>
+            </span>
+            <img
+              alt="Matej"
+              class="img-profiles"
+              src="/src/images/profiles/matej.png"
+            />
+          </span>
+          <span class="flex justify-end items-center">
+            <span class="flex flex-col items-center">
+              <span
+                class="text-profiles-name w-[250px] sm:w-[300px] md:w-[500px]"
+                >Bc. Lucia M.</span
+              >
+              <span class="text-profiles-role">Web Dev</span>
+            </span>
+            <img
+              alt="Lucia"
+              class="img-profiles"
+              src="/src/images/profiles/lucia.png"
+            />
+          </span>
+          <span class="flex justify-end items-center">
+            <span class="flex flex-col items-center">
+              <span class="text-profiles-name w-[180px] sm:w-[220px]"
+                >Bc. Silvia Š.</span
+              >
+              <span class="text-profiles-role">Documentarist</span>
+            </span>
+            <img
+              alt="Silvia"
+              class="img-profiles"
+              src="/src/images/profiles/silvia.png"
+            />
+          </span>
+        </div>
+        <div class="items-end flex flex-col gap-10 pt-10 md:pt-24">
+          <span class="flex justify-start items-center">
+            <img
+              alt="Katarina"
+              class="img-profiles"
+              src="/src/images/profiles/katarina.png"
+            />
+            <span class="flex flex-col items-center">
+              <span
+                class="text-profiles-name w-[250px] sm:w-[300px] md:w-[500px]"
+                >Bc. Katarína B.</span
+              >
+              <span class="text-profiles-role">ML Engineer</span>
+            </span>
+          </span>
+          <span class="flex justify-start items-center">
+            <img
+              alt="Andrei"
+              class="img-profiles"
+              src="/src/images/profiles/andrei.png"
+            />
+            <span class="flex flex-col items-center">
+              <span class="text-profiles-name w-[180px] sm:w-[220px]"
+                >Bc. Andrei Ch.</span
+              >
+              <span class="text-profiles-role">
+                Domain Knowledge <br />
+                Expert
+              </span>
+            </span>
+          </span>
+          <span class="flex justify-start items-center">
+            <img
+              alt="Michaela"
+              class="img-profiles"
+              src="/src/images/profiles/michaela.png"
+            />
+            <span class="flex flex-col items-center">
+              <span
+                class="text-profiles-name w-[250px] sm:w-[300px] md:w-[500px]"
+                >Bc. Michaela H.</span
+              >
+              <span class="text-profiles-role">ML Engineer</span>
+            </span>
+          </span>
+          <span class="flex justify-start items-center">
+            <img
+              alt="Janka"
+              class="img-profiles"
+              src="/src/images/profiles/jana.png"
+            />
+            <span class="flex flex-col items-center">
+              <span class="text-profiles-name w-[180px] sm:w-[220px]"
+                >Bc. Janka L.</span
+              >
+              <span class="text-profiles-role"> Data Scientist <br /> </span>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div id="simulacia" class="wrapper">
+      <h1 class="h1-sections">// SIMULÁCIA</h1>
+      <p
+        class="mb-5 font-medium text-center text-grey text-[1.25rem] md:text-[1.3rem] md:mb-10"
+      >
+        Nasledujúce video zachytáva
+        <span class="text-webotsGreen">proces trénovania</span> v prostredí
+        Webots.
+      </p>
+      <video class="w-3/4 display-block ml-auto mr-auto mb-5" controls>
+        <source src="./src/videos/simulation.mp4" type="video/mp4" />
+      </video>
+      <p
+        class="mb-5 font-medium text-center text-grey text-[1.25rem] md:text-[1.3rem] md:mb-10"
+      >
+        Ak sa ti ukážka zo simulácie páči a chceš si kopnúť s nami, klikni
+        <a href="/simulacia" class="text-webotsGreen cursor-pointer underline"
+          >SEM</a
+        >
+        alebo na plagát nižšie! 👀
+      </p>
+      <div class="border-rainbow w-3/4 max-w-[600px] display-block ml-auto mr-auto">
+        <a href="/simulacia">
+          <img
+            alt="Simulácia"
+            class="object-cover w-full cursor-pointer"
+            src="/src/images/poster.svg"
+          />
+        </a>
+      </div>
+    </div>
+    <div id="dokumenty" class="wrapper">
+      <h1 class="h1-sections mb-5 md:mb-10">// DOKUMENTY</h1>
+      <div class="flex flex-col items-center">
+        <div
+          class="border-solid border-4 border-webotsGreen pb-5 mb-10 md:mb-24 w-3/4"
+        >
           <h2 class="h2-documents text-center-margin mt-2">Zápisnice</h2>
           <div class="grid md:grid-cols-2">
             <div class="flex flex-col">
@@ -331,18 +394,10 @@
               <div class="semesterRecords hidden" semester="first">
                 <% for(const record of records.first) {%>
                 <span class="flex justify-center pt-5 md:pt-2">
-                  <p
-                    class="text-blue font-roboto text-xl sm:text-2xl font-bold w-[170px]"
-                  >
+                  <p class="text-grey text-xl sm:text-2xl w-[170px]">
                     <%= record.name %>
                   </p>
-                  <a href="<%= record.src %>" target="_blank" rel="noreferrer">
-                    <img
-                      alt="Stiahnuť"
-                      class="img-save"
-                      src="/src/images/save.png"
-                    />
-                  </a>
+                  <a href="<%= record.src %>" target="_blank" rel="noreferrer">⬇️</a>
                 </span>
                 <% } %>
               </div>
@@ -362,25 +417,19 @@
               <div class="semesterRecords hidden" semester="second">
                 <% for(const record of records.second) {%>
                 <span class="flex justify-center pt-5 md:pt-2">
-                  <p
-                    class="text-blue font-roboto text-xl sm:text-2xl font-bold w-[170px]"
-                  >
+                  <p class="text-grey text-xl sm:text-2xl w-[170px]">
                     <%= record.name %>
                   </p>
-                  <a href="<%= record.src %>" target="_blank" rel="noreferrer">
-                    <img
-                      alt="Stiahnuť"
-                      class="img-save"
-                      src="/src/images/save.png"
-                    />
-                  </a>
+                  <a href="<%= record.src %>" target="_blank" rel="noreferrer">⬇️</a>
                 </span>
                 <% } %>
               </div>
             </div>
           </div>
         </div>
-        <div class="border-solid border-4 mb-10 md:mb-24 w-3/4">
+        <div
+          class="border-solid border-4 border-webotsGreen mb-10 md:mb-24 w-3/4"
+        >
           <h2 class="h2-documents text-center-margin mt-2">Dokumentácie</h2>
           <div class="flex justify-between px-5">
             <div id="documents" class="content-documents"></div>
@@ -398,11 +447,11 @@
           </p>
         </div>
         <div class="items-center">
-          <h1 class="font-extrabold text-4xl text-center text-purple">
+          <h1 class="font-extrabold text-4xl text-center text-webotsGreen">
             KONTAKT
           </h1>
           <p class="flex p-footer items-center justify-center">
-            &copy; 2022 tím 11
+            &copy; 2023 tím 11
             <a
               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
               target="_blank"
@@ -420,14 +469,14 @@
         class="wrapper flex flex-col items-center w-full px-10 py-5 md:hidden"
       >
         <div class="items-center">
-          <h1 class="font-extrabold text-4xl text-center text-purple mb-2">
+          <h1 class="font-extrabold text-4xl text-center text-webotsGreen mb-2">
             KONTAKT
           </h1>
         </div>
         <div class="text-center">
           <p class="p-footer">FIIT, Ilkovičova 6276/2</p>
           <p class="p-footer">tp.team11.fiit@gmail.com</p>
-          <p class="p-footer">&copy; 2022 tím 11</p>
+          <p class="p-footer">&copy; 2023 tím 11</p>
         </div>
       </div>
     </footer>
