@@ -219,7 +219,8 @@
           target="_blank"
           noreferer
           noopener
-        >TU</a>
+          >TU</a
+        >
       </p>
       <div class="grid md:grid-cols-2 md:mt-10 md:mb-10">
         <div class="items-start flex flex-col gap-10 pt-8">
@@ -349,9 +350,15 @@
         <span class="text-webotsGreen">proces trénovania</span> v prostredí
         Webots.
       </p>
-      <video class="w-3/4 display-block ml-auto mr-auto mb-5" controls>
-        <source src="./src/videos/simulation.mp4" type="video/mp4" />
-      </video>
+      <div class="mb-10">
+        <iframe
+          class="aspect-[16/9] block m-auto"
+          src="https://www.youtube-nocookie.com/embed/82uNxfSGCRY"
+          allowfullscreen="true"
+          frameborder="0"
+        ></iframe>
+      </div>
+
       <p
         class="mb-5 font-medium text-center text-grey text-[1.25rem] md:text-[1.3rem] md:mb-10"
       >
@@ -361,7 +368,9 @@
         >
         alebo na plagát nižšie! 👀
       </p>
-      <div class="border-rainbow w-3/4 max-w-[600px] display-block ml-auto mr-auto">
+      <div
+        class="border-rainbow w-3/4 max-w-[600px] display-block ml-auto mr-auto"
+      >
         <a href="/simulacia">
           <img
             alt="Simulácia"
@@ -394,10 +403,16 @@
               <div class="semesterRecords hidden" semester="first">
                 <% for(const record of records.first) {%>
                 <span class="flex justify-center pt-5 md:pt-2">
+                  <a href="<%= record.src %>" target="_blank" rel="noreferrer">
+                    <img
+                      alt="Stiahnuť"
+                      class="img-save"
+                      src="/src/images/download.png"
+                    />
+                  </a>
                   <p class="text-grey text-xl sm:text-2xl w-[170px]">
                     <%= record.name %>
                   </p>
-                  <a href="<%= record.src %>" target="_blank" rel="noreferrer">⬇️</a>
                 </span>
                 <% } %>
               </div>
@@ -417,10 +432,16 @@
               <div class="semesterRecords hidden" semester="second">
                 <% for(const record of records.second) {%>
                 <span class="flex justify-center pt-5 md:pt-2">
+                  <a href="<%= record.src %>" target="_blank" rel="noreferrer">
+                    <img
+                      alt="Stiahnuť"
+                      class="img-save"
+                      src="/src/images/download.png"
+                    />
+                  </a>
                   <p class="text-grey text-xl sm:text-2xl w-[170px]">
                     <%= record.name %>
                   </p>
-                  <a href="<%= record.src %>" target="_blank" rel="noreferrer">⬇️</a>
                 </span>
                 <% } %>
               </div>
@@ -428,11 +449,42 @@
           </div>
         </div>
         <div
-          class="border-solid border-4 border-webotsGreen mb-10 md:mb-24 w-3/4"
+          class="border-solid border-4 border-webotsGreen pb-5 mb-10 md:mb-24 w-3/4"
         >
           <h2 class="h2-documents text-center-margin mt-2">Dokumentácie</h2>
-          <div class="flex justify-between px-5">
-            <div id="documents" class="content-documents"></div>
+          <div class="grid md:grid-cols-2">
+            <div class="flex flex-col">
+              <% for(const document of records.docs.slice(0,2)) {%>
+              <span class="flex justify-center pt-5 md:pt-2">
+                <a href="<%= document.src %>" target="_blank" rel="noreferrer">
+                  <img
+                    alt="Stiahnuť"
+                    class="img-save"
+                    src="/src/images/download.png"
+                  />
+                </a>
+                <p class="text-grey text-xl sm:text-2xl w-[250px]">
+                  <%= document.name %>
+                </p>
+              </span>
+              <% } %>
+            </div>
+            <div class="flex flex-col mt-2 md:mt-0">
+              <% for(const document of records.docs.slice(2,4)) {%>
+              <span class="flex justify-center pt-5 md:pt-2">
+                <a href="<%= document.src %>" target="_blank" rel="noreferrer">
+                  <img
+                    alt="Stiahnuť"
+                    class="img-save"
+                    src="/src/images/download.png"
+                  />
+                </a>
+                <p class="text-grey text-xl sm:text-2xl w-[250px]">
+                  <%= document.name %>
+                </p>
+              </span>
+              <% } %>
+            </div>
           </div>
         </div>
       </div>
