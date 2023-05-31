@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     ViteEjsPlugin({
-      records: JSON.parse(fs.readFileSync('./src/config/documents.json')),
+      records: JSON.parse(fs.readFileSync('./src/config/documents.json'))
     }),
   ],
 });

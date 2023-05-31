@@ -1,4 +1,63 @@
 {
+  "team": [
+    [
+      {
+        "name": "Martin",
+        "img": "martin",
+        "fullname": "Ing. Martin Komák, PhD.",
+        "role": "Product Owner"
+      },
+      {
+        "name": "Katarina",
+        "img": "katarina",
+        "fullname": "Bc. Katarína B.",
+        "role": "ML Engineer"
+      }
+    ],
+    [
+      {
+        "name": "Matej",
+        "img": "matej",
+        "fullname": "Bc. Matej B.",
+        "role": "DevOps"
+      },
+      {
+        "name": "Andrei",
+        "img": "andrei",
+        "fullname": "Bc. Andrei Ch.",
+        "role": "Domain Knowledge\nExpert"
+      }
+    ],
+    [
+      {
+        "name": "Lucia",
+        "img": "lucia",
+        "fullname": "Bc. Lucia M.",
+        "role": "Web Dev"
+      },
+      {
+        "name": "Michaela",
+        "img": "michaela",
+        "fullname": "Bc. Michaela H.",
+        "role": "ML Engineer"
+      }
+    ],
+    [
+      {
+        "name": "Silvia",
+        "img": "silvia",
+        "fullname": "Bc. Silvia Š.",
+        "role": "Documentarist"
+      },
+      {
+        "name": "Janka",
+        "img": "jana",
+        "fullname": "Bc. Janka L.",
+        "role": "Data Scientist"
+      }
+    ]
+
+  ],
   "first": [
     {
       "id": 1,
@@ -54,7 +113,7 @@
       "id": 11,
       "name": "Zápisnica č.11",
       "src" : "../zapisnice/Zapisnica_ZS_11.pdf"
-    }    
+    }
   ],
   "second": [
     {
@@ -63,14 +122,81 @@
       "src" : "../zapisnice/Zapisnica_LS_1.pdf"
     },
     {
-      "id": 14,
+      "id": 13,
       "name": "Zápisnica č.13",
       "src" : "../zapisnice/Zapisnica_LS_2.pdf"
     },
     {
-      "id": 15,
+      "id": 14,
       "name": "Zápisnica č.14",
       "src" : "../zapisnice/Zapisnica_LS_3.pdf"
+    },
+    {
+      "id": 15,
+      "name": "Zápisnica č.15",
+      "src" : "../zapisnice/Zapisnica_LS_4.pdf"
+    },
+    {
+      "id": 16,
+      "name": "Zápisnica č.16",
+      "src" : "../zapisnice/Zapisnica_LS_5.pdf"
+    },
+    {
+      "id": 17,
+      "name": "Zápisnica č.17",
+      "src" : "../zapisnice/Zapisnica_LS_6.pdf"
+    },
+    {
+      "id": 18,
+      "name": "Zápisnica č.18",
+      "src" : "../zapisnice/Zapisnica_LS_7.pdf"
+    },
+    {
+      "id": 19,
+      "name": "Zápisnica č.19",
+      "src" : "../zapisnice/Zapisnica_LS_8.pdf"
+    },
+    {
+      "id": 20,
+      "name": "Zápisnica č.20",
+      "src" : "../zapisnice/Zapisnica_LS_9.pdf"
+    },
+    {
+      "id": 21,
+      "name": "Zápisnica č.21",
+      "src" : "../zapisnice/Zapisnica_LS_10.pdf"
+    },
+    {
+      "id": 22,
+      "name": "Zápisnica č.22",
+      "src" : "../zapisnice/Zapisnica_LS_11.pdf"
+    },
+    {
+      "id": 23,
+      "name": "Zápisnica č.23",
+      "src" : "../zapisnice/Zapisnica_LS_12.pdf"
+    }
+  ],
+  "docs": [
+    {
+      "id": 24,
+      "name": "Motivácia",
+      "src" : "../zapisnice/motivacny.pdf"
+    },
+    {
+      "id": 25,
+      "name": "Súhrn projektu",
+      "src" : "../zapisnice/suhrn_projektu.pdf"
+    },
+    {
+      "id": 26,
+      "name": "IIT.SRC článok",
+      "src" : "../zapisnice/iit_src.pdf"
+    },
+    {
+      "id": 27,
+      "name": "TP CUP prihláška",
+      "src" : "../zapisnice/tpcup_prihlaska.pdf"
     }
   ]
 }
