@@ -1,4 +1,63 @@
 {
+  "team": [
+    [
+      {
+        "name": "Martin",
+        "img": "martin",
+        "fullname": "Ing. Martin Komák, PhD.",
+        "role": "Product Owner"
+      },
+      {
+        "name": "Katarina",
+        "img": "katarina",
+        "fullname": "Bc. Katarína B.",
+        "role": "ML Engineer"
+      }
+    ],
+    [
+      {
+        "name": "Matej",
+        "img": "matej",
+        "fullname": "Bc. Matej B.",
+        "role": "DevOps"
+      },
+      {
+        "name": "Andrei",
+        "img": "andrei",
+        "fullname": "Bc. Andrei Ch.",
+        "role": "Domain Knowledge\nExpert"
+      }
+    ],
+    [
+      {
+        "name": "Lucia",
+        "img": "lucia",
+        "fullname": "Bc. Lucia M.",
+        "role": "Web Dev"
+      },
+      {
+        "name": "Michaela",
+        "img": "michaela",
+        "fullname": "Bc. Michaela H.",
+        "role": "ML Engineer"
+      }
+    ],
+    [
+      {
+        "name": "Silvia",
+        "img": "silvia",
+        "fullname": "Bc. Silvia Š.",
+        "role": "Documentarist"
+      },
+      {
+        "name": "Janka",
+        "img": "jana",
+        "fullname": "Bc. Janka L.",
+        "role": "Data Scientist"
+      }
+    ]
+
+  ],
   "first": [
     {
       "id": 1,
@@ -54,7 +113,7 @@
       "id": 11,
       "name": "Zápisnica č.11",
       "src" : "../zapisnice/Zapisnica_ZS_11.pdf"
-    }    
+    }
   ],
   "second": [
     {
@@ -139,5 +198,5 @@
       "name": "TP CUP prihláška",
       "src" : "../zapisnice/tpcup_prihlaska.pdf"
     }
-  ] 
+  ]
 }
